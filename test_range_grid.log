@@ -1,0 +1,43 @@
+2025-06-13 14:55:36,747 - __main__ - INFO - --- Testing RangeGridModel (Bollinger Bands) ---
+2025-06-13 14:56:56,187 - __main__ - INFO - --- Testing RangeGridModel (Bollinger Bands) ---
+2025-06-13 14:56:56,188 - __main__ - INFO - RangeGridModel initialized for EURUSD: Method='bollinger', LinesPerSide=3, SpacingFraction=0.2, SL_ATR_Buffer=0.5x, TPtargetOtherSide=True
+2025-06-13 14:56:56,189 - __main__ - INFO - RangeGrid: Defined range for EURUSD: Low=1.09806, High=1.10180
+2025-06-13 14:56:56,189 - __main__ - DEBUG - MockRM RG: Lots 0.02 for EURUSD E:1.1018 SL:1.1022 Risk:10.0 Pips:40.00
+2025-06-13 14:56:56,189 - __main__ - DEBUG - MockRM RG: Lots 0.01 for EURUSD E:1.10105 SL:1.1022 Risk:10.0 Pips:115.00
+2025-06-13 14:56:56,189 - __main__ - DEBUG - MockRM RG: Lots 0.01 for EURUSD E:1.10031 SL:1.1022 Risk:10.0 Pips:189.00
+2025-06-13 14:56:56,189 - __main__ - DEBUG - MockRM RG: Lots 0.03 for EURUSD E:1.09806 SL:1.09766 Risk:10.0 Pips:40.00
+2025-06-13 14:56:56,189 - __main__ - DEBUG - MockRM RG: Lots 0.01 for EURUSD E:1.09881 SL:1.09766 Risk:10.0 Pips:115.00
+2025-06-13 14:56:56,189 - __main__ - DEBUG - MockRM RG: Lots 0.01 for EURUSD E:1.09956 SL:1.09766 Risk:10.0 Pips:190.00
+2025-06-13 14:56:56,189 - __main__ - INFO - Generated 6 orders for RangeGridModel (EURUSD).
+2025-06-13 14:56:56,189 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_LIMIT', 'entry_price': np.float64(1.1018), 'sl': np.float64(1.1022), 'tp': np.float64(1.09806), 'lot_size': 0.02, 'grid_id': 'RG_EURUSD_SLIM_0'}
+2025-06-13 14:56:56,190 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_LIMIT', 'entry_price': np.float64(1.10105), 'sl': np.float64(1.1022), 'tp': np.float64(1.09806), 'lot_size': 0.01, 'grid_id': 'RG_EURUSD_SLIM_1'}
+2025-06-13 14:56:56,190 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_LIMIT', 'entry_price': np.float64(1.10031), 'sl': np.float64(1.1022), 'tp': np.float64(1.09806), 'lot_size': 0.01, 'grid_id': 'RG_EURUSD_SLIM_2'}
+2025-06-13 14:56:56,190 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_LIMIT', 'entry_price': np.float64(1.09806), 'sl': np.float64(1.09766), 'tp': np.float64(1.1018), 'lot_size': 0.03, 'grid_id': 'RG_EURUSD_BLIM_0'}
+2025-06-13 14:56:56,190 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_LIMIT', 'entry_price': np.float64(1.09881), 'sl': np.float64(1.09766), 'tp': np.float64(1.1018), 'lot_size': 0.01, 'grid_id': 'RG_EURUSD_BLIM_1'}
+2025-06-13 14:56:56,190 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_LIMIT', 'entry_price': np.float64(1.09956), 'sl': np.float64(1.09766), 'tp': np.float64(1.1018), 'lot_size': 0.01, 'grid_id': 'RG_EURUSD_BLIM_2'}
+2025-06-13 14:56:56,190 - __main__ - INFO - --- Testing RangeGridModel (Recent High/Low) ---
+2025-06-13 14:56:56,190 - __main__ - INFO - RangeGridModel initialized for EURUSD: Method='recent_high_low', LinesPerSide=2, SpacingFraction=0.25, SL_ATR_Buffer=0.3x, TPtargetOtherSide=False
+2025-06-13 14:56:56,193 - __main__ - INFO - RangeGrid: Defined range for EURUSD: Low=1.09724, High=1.10214
+2025-06-13 14:56:56,194 - __main__ - DEBUG - MockRM RG: Lots 0.04 for EURUSD E:1.10214 SL:1.10238 Risk:10.0 Pips:24.00
+2025-06-13 14:56:56,194 - __main__ - DEBUG - MockRM RG: Lots 0.01 for EURUSD E:1.10092 SL:1.10238 Risk:10.0 Pips:146.00
+2025-06-13 14:56:56,194 - __main__ - DEBUG - MockRM RG: Lots 0.04 for EURUSD E:1.09724 SL:1.097 Risk:10.0 Pips:24.00
+2025-06-13 14:56:56,194 - __main__ - DEBUG - MockRM RG: Lots 0.01 for EURUSD E:1.09847 SL:1.097 Risk:10.0 Pips:147.00
+2025-06-13 14:56:56,194 - __main__ - INFO - Generated 4 orders for RangeGridModel (EURUSD).
+2025-06-13 14:56:56,194 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_LIMIT', 'entry_price': np.float64(1.10214), 'sl': np.float64(1.10238), 'tp': np.float64(1.10054), 'lot_size': 0.04, 'grid_id': 'RG_EURUSD_SLIM_0'}
+2025-06-13 14:56:56,194 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_LIMIT', 'entry_price': np.float64(1.10092), 'sl': np.float64(1.10238), 'tp': np.float64(1.09932), 'lot_size': 0.01, 'grid_id': 'RG_EURUSD_SLIM_1'}
+2025-06-13 14:56:56,194 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_LIMIT', 'entry_price': np.float64(1.09724), 'sl': np.float64(1.097), 'tp': np.float64(1.09884), 'lot_size': 0.04, 'grid_id': 'RG_EURUSD_BLIM_0'}
+2025-06-13 14:56:56,194 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_LIMIT', 'entry_price': np.float64(1.09847), 'sl': np.float64(1.097), 'tp': np.float64(1.10007), 'lot_size': 0.01, 'grid_id': 'RG_EURUSD_BLIM_1'}
+2025-06-13 14:56:56,194 - __main__ - INFO - --- Testing RangeGridModel (Invalid Range - Low >= High initially by manual override) ---
+2025-06-13 14:56:56,195 - __main__ - INFO - RangeGridModel initialized for EURUSD: Method='bollinger', LinesPerSide=3, SpacingFraction=0.2, SL_ATR_Buffer=0.5x, TPtargetOtherSide=True
+2025-06-13 14:56:56,196 - __main__ - WARNING - RangeGrid: Initial range invalid (Low 1.101 >= High 1.1).
+2025-06-13 14:56:56,196 - __main__ - WARNING - RangeGrid: Range width too small or inverted. Expanding slightly around midpoint using 0.5 * ATR (0.0008).
+2025-06-13 14:56:56,196 - __main__ - INFO - RangeGrid: Defined range for EURUSD: Low=1.10030, High=1.10070
+2025-06-13 14:56:56,196 - __main__ - DEBUG - MockRM RG: Lots 0.03 for EURUSD E:1.1007 SL:1.1011 Risk:10.0 Pips:40.00
+2025-06-13 14:56:56,196 - __main__ - DEBUG - MockRM RG: Lots 0.02 for EURUSD E:1.10062 SL:1.1011 Risk:10.0 Pips:48.00
+2025-06-13 14:56:56,196 - __main__ - DEBUG - MockRM RG: Lots 0.02 for EURUSD E:1.10054 SL:1.1011 Risk:10.0 Pips:56.00
+2025-06-13 14:56:56,196 - __main__ - DEBUG - RangeGrid: First Buy Limit entry 1.1003 is at or above base_price 1.100125168062288. May fill immediately or be invalid.
+2025-06-13 14:56:56,196 - __main__ - DEBUG - MockRM RG: Lots 0.03 for EURUSD E:1.1003 SL:1.0999 Risk:10.0 Pips:40.00
+2025-06-13 14:56:56,196 - __main__ - DEBUG - MockRM RG: Lots 0.02 for EURUSD E:1.10038 SL:1.0999 Risk:10.0 Pips:48.00
+2025-06-13 14:56:56,196 - __main__ - DEBUG - MockRM RG: Lots 0.02 for EURUSD E:1.10046 SL:1.0999 Risk:10.0 Pips:56.00
+2025-06-13 14:56:56,196 - __main__ - INFO - Generated 6 orders for RangeGridModel (EURUSD).
+2025-06-13 14:56:56,196 - __main__ - INFO - Orders from invalid initial range: 6

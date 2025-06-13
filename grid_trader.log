@@ -22,3 +22,278 @@
 2025-06-13 14:24:12,850 - grid_trader.models.base_model - INFO - Initialized DualGridModel for EURUSD buy at 1.1015
 2025-06-13 14:24:12,851 - grid_trader.models.base_model - INFO - Initialized DualGridModel for XAUUSD sell at 1950.0
 2025-06-13 14:24:12,852 - grid_trader.models.base_model - INFO - Initialized DualGridModel for EURUSD buy at 1.1015
+2025-06-13 14:34:02,434 - grid_trader.models.base_model - INFO - Initialized StaticGridModel for EURUSD buy at 1.105
+2025-06-13 14:34:02,435 - grid_trader.models.base_model - INFO - Initialized StaticGridModel for EURUSD buy at 1.105
+2025-06-13 14:34:02,435 - grid_trader.models.base_model - INFO - Initialized StaticGridModel for XAUUSD sell at 1950.0
+2025-06-13 14:34:02,436 - grid_trader.models.base_model - INFO - Initialized StaticGridModel for EURUSD buy at 1.099
+2025-06-13 14:34:02,436 - grid_trader.models.base_model - INFO - Initialized StaticGridModel for XAUUSD sell at 1961.0
+2025-06-13 14:34:02,436 - grid_trader.models.base_model - INFO - Initialized StaticGridModel for EURUSD buy at 1.10001
+2025-06-13 14:35:58,557 - grid_trader.models.base_model - INFO - Initialized PyramidGridModel for EURUSD buy at 1.1015
+2025-06-13 14:35:58,558 - grid_trader.models.base_model - INFO - Initialized PyramidGridModel for EURUSD buy at 1.1015
+2025-06-13 14:35:58,558 - grid_trader.models.base_model - INFO - Initialized PyramidGridModel for USDJPY sell at 130.5
+2025-06-13 14:35:58,559 - grid_trader.models.base_model - INFO - Initialized PyramidGridModel for EURUSD buy at 1.1015
+2025-06-13 14:35:58,559 - grid_trader.models.base_model - ERROR - Missing critical base_trade_params: symbol, direction, base_price, base_sl, or atr.
+2025-06-13 14:38:11,911 - grid_trader.models.base_model - INFO - Initialized StructureGridModel for EURUSD buy at 1.1105
+2025-06-13 14:38:11,922 - grid_trader.models.base_model - INFO - Initialized StructureGridModel for EURUSD sell at 1.105
+2025-06-13 14:38:11,925 - grid_trader.models.base_model - ERROR - Missing critical base_trade_params: symbol, direction, base_price, base_sl, or atr.
+2025-06-13 14:55:36,749 - grid_trader.models.base_model - ERROR - Missing critical base_trade_params: symbol, direction, base_price, base_sl, or atr.
+2025-06-13 14:56:56,188 - grid_trader.models.base_model - INFO - Initialized RangeGridModel for EURUSD buy at 1.100125168062288
+2025-06-13 14:56:56,190 - grid_trader.models.base_model - INFO - Initialized RangeGridModel for EURUSD buy at 1.100125168062288
+2025-06-13 14:56:56,195 - grid_trader.models.base_model - INFO - Initialized RangeGridModel for EURUSD buy at 1.100125168062288
+2025-06-13 15:46:14,783 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 3, Cooldown: 300s
+2025-06-13 15:46:14,787 - grid_trader.engine.signal_router - INFO - SignalRouter initialized for EURUSD at base price 1.11 with current ATR 0.001
+2025-06-13 15:46:14,792 - grid_trader.engine.signal_router - INFO - SignalRouter Evaluation for EURUSD: Vol:NORMAL, Trend:None(ADX:N/A), Range:None, NearSH:None, NearSL:None
+2025-06-13 15:46:14,792 - grid_trader.models.base_model - ERROR - Missing critical base_trade_params: symbol, direction, base_price, base_sl, or atr.
+2025-06-13 15:48:34,569 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 3, Cooldown: 300s
+2025-06-13 15:48:34,573 - grid_trader.models.base_model - INFO - Initialized MockVolatilityGridModel for EURUSD buy at 1.11
+2025-06-13 15:48:34,573 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(aae36e | EURUSD BUY_STOP 0.01 lots @ 1.111 SL:1.11 TP:1.112 | Status: PENDING | GridID: grid_volatilitygrid_EURUSD_1749829714 | Regen: 0)
+2025-06-13 15:48:34,573 - grid_trader.engine.order_manager - INFO - Widening SL/TP for regen of EURUSD_slot1. Factor: 1.2. SL: 1.11->1.11, TP: 1.112->1.112
+2025-06-13 15:48:34,574 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(5c24b5 | EURUSD BUY_STOP 0.01 lots @ 1.111 SL:1.11 TP:1.112 | Status: PENDING | GridID: grid_volatilitygrid_EURUSD_1749829714 | Regen: 1)
+2025-06-13 15:49:14,113 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 3, Cooldown: 300s
+2025-06-13 15:49:14,117 - grid_trader.models.base_model - INFO - Initialized MockVolatilityGridModel for EURUSD buy at 1.11
+2025-06-13 15:49:14,117 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(e9a81a | EURUSD BUY_STOP 0.01 lots @ 1.111 SL:1.11 TP:1.112 | Status: PENDING | GridID: grid_volatilitygrid_EURUSD_1749829754 | Regen: 0)
+2025-06-13 15:49:14,118 - grid_trader.engine.order_manager - INFO - Widening SL/TP for regen of EURUSD_slot1. Factor: 1.2. SL: 1.11->1.11, TP: 1.112->1.112
+2025-06-13 15:49:14,118 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(3a51ed | EURUSD BUY_STOP 0.01 lots @ 1.111 SL:1.11 TP:1.112 | Status: PENDING | GridID: grid_volatilitygrid_EURUSD_1749829754 | Regen: 1)
+2025-06-13 15:50:42,056 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 3, Cooldown: 300s
+2025-06-13 15:50:42,061 - grid_trader.models.base_model - INFO - Initialized MockVolatilityGridModel for EURUSD buy at 1.11
+2025-06-13 15:50:42,061 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(db17da | EURUSD BUY_STOP 0.01 lots @ 1.111 SL:1.11 TP:1.112 | Status: PENDING | GridID: grid_volatilitygrid_EURUSD_1749829842 | Regen: 0)
+2025-06-13 15:50:42,062 - grid_trader.engine.order_manager - INFO - Widening SL/TP for regen of EURUSD_slot1. Factor: 1.2. SL: 1.11->1.11, TP: 1.112->1.112
+2025-06-13 15:50:42,062 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(e05af9 | EURUSD BUY_STOP 0.01 lots @ 1.111 SL:1.11 TP:1.112 | Status: PENDING | GridID: grid_volatilitygrid_EURUSD_1749829842 | Regen: 1)
+2025-06-13 15:50:42,062 - grid_trader.engine.order_manager - INFO - Widening SL/TP for regen of EURUSD_slot1. Factor: 1.5. SL: 1.11->1.11, TP: 1.112->1.113
+2025-06-13 15:50:42,062 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(88cf8f | EURUSD BUY_STOP 0.01 lots @ 1.111 SL:1.11 TP:1.113 | Status: PENDING | GridID: grid_volatilitygrid_EURUSD_1749829842 | Regen: 2)
+2025-06-13 15:50:42,062 - grid_trader.engine.order_manager - INFO - Widening SL/TP for regen of EURUSD_slot1. Factor: 1.2. SL: 1.11->1.11, TP: 1.113->1.113
+2025-06-13 15:50:42,063 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(11cfc6 | EURUSD BUY_STOP 0.01 lots @ 1.111 SL:1.11 TP:1.113 | Status: PENDING | GridID: grid_volatilitygrid_EURUSD_1749829842 | Regen: 3)
+2025-06-13 15:53:09,569 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 2, Cooldown: 1e-05s
+2025-06-13 15:53:09,573 - grid_trader.models.base_model - INFO - Initialized MockVolatilityGridModel for EURUSD buy at 1.11
+2025-06-13 15:53:09,574 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(46a92c | EURUSD BUY_STOP 0.01 lots @ 1.111 SL:1.11 TP:1.112 | Status: PENDING | GridID: grid_volatilitygrid_EURUSD_1749829989 | Regen: 0)
+2025-06-13 15:53:09,574 - grid_trader.engine.order_manager - INFO - Widening SL/TP for regen of EURUSD_slot1. Factor: 1.2. SL: 1.11->1.11, TP: 1.112->1.112
+2025-06-13 15:53:09,574 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(fbb21c | EURUSD BUY_STOP 0.01 lots @ 1.111 SL:1.11 TP:1.112 | Status: PENDING | GridID: grid_volatilitygrid_EURUSD_1749829989 | Regen: 1)
+2025-06-13 15:53:09,574 - grid_trader.engine.order_manager - INFO - Widening SL/TP for regen of EURUSD_slot1. Factor: 1.5. SL: 1.11->1.11, TP: 1.112->1.113
+2025-06-13 15:53:09,574 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(d1b7d4 | EURUSD BUY_STOP 0.01 lots @ 1.111 SL:1.11 TP:1.113 | Status: PENDING | GridID: grid_volatilitygrid_EURUSD_1749829989 | Regen: 2)
+2025-06-13 15:53:09,575 - grid_trader.engine.order_manager - INFO - Order slot EURUSD_slot1 (last attempt 9b43b89e-498b-4517-9e6d-6686c9d1b7d4) reached max regen attempts (2).
+2025-06-13 15:55:24,939 - grid_trader_session - INFO - Starting Grid Trader Example Session...
+2025-06-13 15:55:24,940 - grid_trader.engine.risk_manager - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 15:55:24,940 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 3, Cooldown: 300s
+2025-06-13 15:55:24,940 - grid_trader.engine.grid_manager - INFO - GridManager initialized.
+2025-06-13 15:55:24,940 - grid_trader_main - INFO - Generating sample historical data with 150 bars...
+2025-06-13 15:55:24,948 - grid_trader_main - INFO - Calculating indicators for sample data...
+2025-06-13 15:55:24,968 - grid_trader_main - INFO - Sample historical data generated. Original len: 150, After dropna: 131
+2025-06-13 15:56:42,488 - grid_trader_session - INFO - Starting Grid Trader Example Session...
+2025-06-13 15:56:42,489 - grid_trader.engine.risk_manager - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 15:56:42,489 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 3, Cooldown: 300s
+2025-06-13 15:56:42,489 - grid_trader.engine.grid_manager - INFO - GridManager initialized.
+2025-06-13 15:56:42,489 - grid_trader_main - INFO - Generating sample historical data with 150 bars...
+2025-06-13 15:56:42,497 - grid_trader_main - INFO - Calculating indicators for sample data...
+2025-06-13 15:56:42,516 - grid_trader_main - INFO - Sample historical data generated. Original len: 150, After dropna: 131
+2025-06-13 15:56:42,516 - grid_trader_session - WARNING - EURUSD 'decimals' was missing in SYMBOL_SETTINGS. Defaulted to 5.
+2025-06-13 15:56:42,516 - grid_trader_session - INFO - Base trade parameters for new grid: {'symbol': 'EURUSD', 'direction': 'buy', 'base_price': np.float64(1.092856715883139), 'base_sl': np.float64(1.09152), 'base_tp': np.float64(1.09552), 'base_size_lots': 0.0, 'atr': np.float64(0.0006666673974148989)}
+2025-06-13 15:56:42,516 - grid_trader.engine.signal_router - INFO - SignalRouter initialized for EURUSD at base price 1.092856715883139 with current ATR 0.0006666673974148989
+2025-06-13 15:56:42,519 - grid_trader.engine.signal_router - INFO - SignalRouter Evaluation for EURUSD: Vol:NORMAL, Trend:NONE(ADX:16), Range:True, NearSH:1.0929143234929675, NearSL:None
+2025-06-13 15:56:42,519 - grid_trader.engine.grid_manager - INFO - GM: SignalRouter selected 'RangeGridModel' for EURUSD. Reason: Ranging (BB Width narrow). Vol:NORMAL, Trend:NONE(ADX:16), Range:True, NearSH:1.0929143234929675, NearSL:None
+2025-06-13 15:56:42,519 - grid_trader.models.base_model - INFO - Initialized RangeGridModel for EURUSD buy at 1.092856715883139
+2025-06-13 15:56:42,519 - grid_trader.models.range_grid - INFO - RangeGridModel initialized for EURUSD: Method='bollinger', LinesPerSide=3, SpacingFraction=0.2, SL_ATR_Buffer=0.5x, TPtargetOtherSide=True
+2025-06-13 15:56:42,520 - grid_trader.models.range_grid - INFO - RangeGrid: Defined range for EURUSD: Low=1.09203, High=1.09295
+2025-06-13 15:56:42,520 - grid_trader.models.base_model - ERROR - Error calculating lot size for EURUSD: RiskManager.calculate_lot_size() got an unexpected keyword argument 'account_balance'
+Traceback (most recent call last):
+  File "/app/grid_trader/models/base_model.py", line 92, in _calculate_lot_size
+    lot_size = self.risk_manager.calculate_lot_size(
+TypeError: RiskManager.calculate_lot_size() got an unexpected keyword argument 'account_balance'
+2025-06-13 15:56:42,521 - grid_trader.models.base_model - ERROR - Error calculating lot size for EURUSD: RiskManager.calculate_lot_size() got an unexpected keyword argument 'account_balance'
+Traceback (most recent call last):
+  File "/app/grid_trader/models/base_model.py", line 92, in _calculate_lot_size
+    lot_size = self.risk_manager.calculate_lot_size(
+TypeError: RiskManager.calculate_lot_size() got an unexpected keyword argument 'account_balance'
+2025-06-13 15:56:42,521 - grid_trader.models.base_model - ERROR - Error calculating lot size for EURUSD: RiskManager.calculate_lot_size() got an unexpected keyword argument 'account_balance'
+Traceback (most recent call last):
+  File "/app/grid_trader/models/base_model.py", line 92, in _calculate_lot_size
+    lot_size = self.risk_manager.calculate_lot_size(
+TypeError: RiskManager.calculate_lot_size() got an unexpected keyword argument 'account_balance'
+2025-06-13 15:56:42,521 - grid_trader.models.base_model - ERROR - Error calculating lot size for EURUSD: RiskManager.calculate_lot_size() got an unexpected keyword argument 'account_balance'
+Traceback (most recent call last):
+  File "/app/grid_trader/models/base_model.py", line 92, in _calculate_lot_size
+    lot_size = self.risk_manager.calculate_lot_size(
+TypeError: RiskManager.calculate_lot_size() got an unexpected keyword argument 'account_balance'
+2025-06-13 15:56:42,521 - grid_trader.models.base_model - ERROR - Error calculating lot size for EURUSD: RiskManager.calculate_lot_size() got an unexpected keyword argument 'account_balance'
+Traceback (most recent call last):
+  File "/app/grid_trader/models/base_model.py", line 92, in _calculate_lot_size
+    lot_size = self.risk_manager.calculate_lot_size(
+TypeError: RiskManager.calculate_lot_size() got an unexpected keyword argument 'account_balance'
+2025-06-13 15:56:42,521 - grid_trader.models.base_model - ERROR - Error calculating lot size for EURUSD: RiskManager.calculate_lot_size() got an unexpected keyword argument 'account_balance'
+Traceback (most recent call last):
+  File "/app/grid_trader/models/base_model.py", line 92, in _calculate_lot_size
+    lot_size = self.risk_manager.calculate_lot_size(
+TypeError: RiskManager.calculate_lot_size() got an unexpected keyword argument 'account_balance'
+2025-06-13 15:56:42,521 - grid_trader.models.range_grid - INFO - Generated 0 orders for RangeGridModel (EURUSD).
+2025-06-13 15:56:42,521 - grid_trader.engine.grid_manager - WARNING - GM: Model RangeGridModel gen'd no orders.
+2025-06-13 15:56:42,521 - grid_trader_session - ERROR - Failed to create grid. Session ends.
+2025-06-13 15:57:19,818 - grid_trader_session - INFO - Starting Grid Trader Example Session...
+2025-06-13 15:57:19,818 - grid_trader.engine.risk_manager - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 15:57:19,818 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 3, Cooldown: 300s
+2025-06-13 15:57:19,818 - grid_trader.engine.grid_manager - INFO - GridManager initialized.
+2025-06-13 15:57:19,818 - grid_trader_main - INFO - Generating sample historical data with 150 bars...
+2025-06-13 15:57:19,826 - grid_trader_main - INFO - Calculating indicators for sample data...
+2025-06-13 15:57:19,845 - grid_trader_main - INFO - Sample historical data generated. Original len: 150, After dropna: 131
+2025-06-13 15:57:19,845 - grid_trader_session - WARNING - EURUSD 'decimals' was missing in SYMBOL_SETTINGS. Defaulted to 5.
+2025-06-13 15:57:19,845 - grid_trader_session - INFO - Base trade parameters for new grid: {'symbol': 'EURUSD', 'direction': 'buy', 'base_price': np.float64(1.101329109511455), 'base_sl': np.float64(1.10028), 'base_tp': np.float64(1.10343), 'base_size_lots': 0.0, 'atr': np.float64(0.0005256623367159758)}
+2025-06-13 15:57:19,846 - grid_trader.engine.signal_router - INFO - SignalRouter initialized for EURUSD at base price 1.101329109511455 with current ATR 0.0005256623367159758
+2025-06-13 15:57:19,848 - grid_trader.engine.signal_router - INFO - SignalRouter Evaluation for EURUSD: Vol:NORMAL, Trend:NONE(ADX:21), Range:True, NearSH:None, NearSL:None
+2025-06-13 15:57:19,849 - grid_trader.engine.grid_manager - INFO - GM: SignalRouter selected 'RangeGridModel' for EURUSD. Reason: Ranging (BB Width narrow). Vol:NORMAL, Trend:NONE(ADX:21), Range:True, NearSH:None, NearSL:None
+2025-06-13 15:57:19,849 - grid_trader.models.base_model - INFO - Initialized RangeGridModel for EURUSD buy at 1.101329109511455
+2025-06-13 15:57:19,849 - grid_trader.models.range_grid - INFO - RangeGridModel initialized for EURUSD: Method='bollinger', LinesPerSide=3, SpacingFraction=0.2, SL_ATR_Buffer=0.5x, TPtargetOtherSide=True
+2025-06-13 15:57:19,849 - grid_trader.models.range_grid - INFO - RangeGrid: Defined range for EURUSD: Low=1.10088, High=1.10318
+2025-06-13 15:57:19,849 - grid_trader.engine.risk_manager - ERROR - Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+2025-06-13 15:57:19,849 - grid_trader.models.base_model - ERROR - Error calculating lot size for EURUSD: Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+Traceback (most recent call last):
+  File "/app/grid_trader/models/base_model.py", line 92, in _calculate_lot_size
+    lot_size = self.risk_manager.calculate_lot_size(
+  File "/app/grid_trader/engine/risk_manager.py", line 91, in calculate_lot_size
+    sym_config = self.get_symbol_config(symbol)
+  File "/app/grid_trader/engine/risk_manager.py", line 72, in get_symbol_config
+    raise ValueError(msg)
+ValueError: Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+2025-06-13 15:57:19,850 - grid_trader.engine.risk_manager - ERROR - Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+2025-06-13 15:57:19,850 - grid_trader.models.base_model - ERROR - Error calculating lot size for EURUSD: Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+Traceback (most recent call last):
+  File "/app/grid_trader/models/base_model.py", line 92, in _calculate_lot_size
+    lot_size = self.risk_manager.calculate_lot_size(
+  File "/app/grid_trader/engine/risk_manager.py", line 91, in calculate_lot_size
+    sym_config = self.get_symbol_config(symbol)
+  File "/app/grid_trader/engine/risk_manager.py", line 72, in get_symbol_config
+    raise ValueError(msg)
+ValueError: Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+2025-06-13 15:57:19,850 - grid_trader.engine.risk_manager - ERROR - Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+2025-06-13 15:57:19,851 - grid_trader.models.base_model - ERROR - Error calculating lot size for EURUSD: Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+Traceback (most recent call last):
+  File "/app/grid_trader/models/base_model.py", line 92, in _calculate_lot_size
+    lot_size = self.risk_manager.calculate_lot_size(
+  File "/app/grid_trader/engine/risk_manager.py", line 91, in calculate_lot_size
+    sym_config = self.get_symbol_config(symbol)
+  File "/app/grid_trader/engine/risk_manager.py", line 72, in get_symbol_config
+    raise ValueError(msg)
+ValueError: Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+2025-06-13 15:57:19,851 - grid_trader.engine.risk_manager - ERROR - Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+2025-06-13 15:57:19,851 - grid_trader.models.base_model - ERROR - Error calculating lot size for EURUSD: Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+Traceback (most recent call last):
+  File "/app/grid_trader/models/base_model.py", line 92, in _calculate_lot_size
+    lot_size = self.risk_manager.calculate_lot_size(
+  File "/app/grid_trader/engine/risk_manager.py", line 91, in calculate_lot_size
+    sym_config = self.get_symbol_config(symbol)
+  File "/app/grid_trader/engine/risk_manager.py", line 72, in get_symbol_config
+    raise ValueError(msg)
+ValueError: Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+2025-06-13 15:57:19,851 - grid_trader.engine.risk_manager - ERROR - Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+2025-06-13 15:57:19,851 - grid_trader.models.base_model - ERROR - Error calculating lot size for EURUSD: Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+Traceback (most recent call last):
+  File "/app/grid_trader/models/base_model.py", line 92, in _calculate_lot_size
+    lot_size = self.risk_manager.calculate_lot_size(
+  File "/app/grid_trader/engine/risk_manager.py", line 91, in calculate_lot_size
+    sym_config = self.get_symbol_config(symbol)
+  File "/app/grid_trader/engine/risk_manager.py", line 72, in get_symbol_config
+    raise ValueError(msg)
+ValueError: Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+2025-06-13 15:57:19,851 - grid_trader.engine.risk_manager - ERROR - Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+2025-06-13 15:57:19,851 - grid_trader.models.base_model - ERROR - Error calculating lot size for EURUSD: Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+Traceback (most recent call last):
+  File "/app/grid_trader/models/base_model.py", line 92, in _calculate_lot_size
+    lot_size = self.risk_manager.calculate_lot_size(
+  File "/app/grid_trader/engine/risk_manager.py", line 91, in calculate_lot_size
+    sym_config = self.get_symbol_config(symbol)
+  File "/app/grid_trader/engine/risk_manager.py", line 72, in get_symbol_config
+    raise ValueError(msg)
+ValueError: Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+2025-06-13 15:57:19,851 - grid_trader.models.range_grid - INFO - Generated 0 orders for RangeGridModel (EURUSD).
+2025-06-13 15:57:19,851 - grid_trader.engine.grid_manager - WARNING - GM: Model RangeGridModel gen'd no orders.
+2025-06-13 15:57:19,851 - grid_trader_session - ERROR - Failed to create grid. Session ends.
+2025-06-13 15:59:13,916 - grid_trader.engine.risk_manager - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 15:59:13,916 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 3, Cooldown: 300s
+2025-06-13 15:59:13,916 - grid_trader.engine.grid_manager - INFO - GridManager initialized.
+2025-06-13 15:59:13,947 - grid_trader.engine.signal_router - INFO - SignalRouter initialized for EURUSD at base price 1.1014864110874143 with current ATR 0.000562395572012836
+2025-06-13 15:59:13,950 - grid_trader.engine.signal_router - INFO - SignalRouter Evaluation for EURUSD: Vol:NORMAL, Trend:NONE(ADX:11), Range:True, NearSH:1.101499858788318, NearSL:None
+2025-06-13 15:59:13,950 - grid_trader.engine.grid_manager - INFO - GM: SignalRouter selected 'RangeGridModel' for EURUSD. Reason: Ranging (BB Width narrow). Vol:NORMAL, Trend:NONE(ADX:11), Range:True, NearSH:1.101499858788318, NearSL:None
+2025-06-13 15:59:13,950 - grid_trader.models.base_model - INFO - Initialized RangeGridModel for EURUSD buy at 1.1014864110874143
+2025-06-13 15:59:13,950 - grid_trader.models.range_grid - INFO - RangeGridModel initialized for EURUSD: Method='bollinger', LinesPerSide=3, SpacingFraction=0.2, SL_ATR_Buffer=0.5x, TPtargetOtherSide=True
+2025-06-13 15:59:13,950 - grid_trader.models.range_grid - INFO - RangeGrid: Defined range for EURUSD: Low=1.10096, High=1.10165
+2025-06-13 15:59:13,950 - grid_trader.engine.risk_manager - INFO - LotCalc (EURUSD): Entry=1.10165, SL=1.10193 (2.80 pips). Risk=$10.00. RawLots=0.3571. FinalLots=0.35. Est.Margin=$385.58
+2025-06-13 15:59:13,951 - grid_trader.engine.risk_manager - INFO - LotCalc (EURUSD): Entry=1.10151, SL=1.10193 (4.20 pips). Risk=$10.00. RawLots=0.2381. FinalLots=0.23. Est.Margin=$253.35
+2025-06-13 15:59:13,951 - grid_trader.engine.risk_manager - INFO - LotCalc (EURUSD): Entry=1.10137, SL=1.10193 (5.60 pips). Risk=$10.00. RawLots=0.1786. FinalLots=0.17. Est.Margin=$187.23
+2025-06-13 15:59:13,951 - grid_trader.engine.risk_manager - INFO - LotCalc (EURUSD): Entry=1.10096, SL=1.10068 (2.80 pips). Risk=$10.00. RawLots=0.3571. FinalLots=0.35. Est.Margin=$385.34
+2025-06-13 15:59:13,951 - grid_trader.engine.risk_manager - INFO - LotCalc (EURUSD): Entry=1.1011, SL=1.10068 (4.20 pips). Risk=$10.00. RawLots=0.2381. FinalLots=0.23. Est.Margin=$253.25
+2025-06-13 15:59:13,951 - grid_trader.engine.risk_manager - INFO - LotCalc (EURUSD): Entry=1.10124, SL=1.10068 (5.60 pips). Risk=$10.00. RawLots=0.1786. FinalLots=0.17. Est.Margin=$187.21
+2025-06-13 15:59:13,951 - grid_trader.models.range_grid - INFO - Generated 6 orders for RangeGridModel (EURUSD).
+2025-06-13 15:59:13,951 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(cdb1bc | EURUSD SELL_LIMIT 0.35 lots @ 1.10165 SL:1.10193 TP:1.10096 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,951 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(6c1bea | EURUSD SELL_LIMIT 0.23 lots @ 1.10151 SL:1.10193 TP:1.10096 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,951 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(e5fcae | EURUSD SELL_LIMIT 0.17 lots @ 1.10137 SL:1.10193 TP:1.10096 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,952 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(b975bd | EURUSD BUY_LIMIT 0.35 lots @ 1.10096 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,952 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(71c80d | EURUSD BUY_LIMIT 0.23 lots @ 1.1011 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,952 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(4f6962 | EURUSD BUY_LIMIT 0.17 lots @ 1.10124 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,952 - grid_trader.engine.grid_manager - INFO - GM: Created grid 'grid_rangegrid_EURUSD_1749830353' (6 orders) using RangeGridModel.
+2025-06-13 15:59:13,952 - grid_trader.engine.order_manager - INFO - Order Filled (Simulated): Order(e5fcae | EURUSD SELL_LIMIT 0.17 lots @ 1.10137 SL:1.10193 TP:1.10096 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0) at 1.10137
+2025-06-13 15:59:13,953 - grid_trader.engine.order_manager - INFO - Order Filled (Simulated): Order(4f6962 | EURUSD BUY_LIMIT 0.17 lots @ 1.10124 SL:1.10068 TP:1.10165 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0) at 1.10124
+2025-06-13 15:59:13,967 - grid_trader.engine.order_manager - INFO - Order Filled (Simulated): Order(6c1bea | EURUSD SELL_LIMIT 0.23 lots @ 1.10151 SL:1.10193 TP:1.10096 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0) at 1.10151
+2025-06-13 15:59:13,980 - grid_trader.engine.order_manager - INFO - Order Filled (Simulated): Order(cdb1bc | EURUSD SELL_LIMIT 0.35 lots @ 1.10165 SL:1.10193 TP:1.10096 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0) at 1.102
+2025-06-13 15:59:13,980 - grid_trader.engine.order_manager - INFO - Position Closed (Simulated): Order(e5fcae | EURUSD SELL_LIMIT 0.17 lots @ 1.10137 SL:1.10193 TP:1.10096 | Status: STOPPED_OUT | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0) by STOPPED_OUT at 1.10193
+2025-06-13 15:59:13,980 - grid_trader.engine.order_manager - INFO - Position Closed (Simulated): Order(4f6962 | EURUSD BUY_LIMIT 0.17 lots @ 1.10124 SL:1.10068 TP:1.10165 | Status: TP_HIT | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0) by TP_HIT at 1.10165
+2025-06-13 15:59:13,980 - grid_trader.engine.order_manager - INFO - Position Closed (Simulated): Order(6c1bea | EURUSD SELL_LIMIT 0.23 lots @ 1.10151 SL:1.10193 TP:1.10096 | Status: STOPPED_OUT | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0) by STOPPED_OUT at 1.10193
+2025-06-13 15:59:13,980 - grid_trader.engine.order_manager - INFO - Position Closed (Simulated): Order(cdb1bc | EURUSD SELL_LIMIT 0.35 lots @ 1.10165 SL:1.10193 TP:1.10096 | Status: STOPPED_OUT | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0) by STOPPED_OUT at 1.10193
+2025-06-13 15:59:13,980 - grid_trader.engine.order_manager - INFO - Widening SL/TP for regen of RG_EURUSD_SLIM_2. Factor: 1.2. SL: 1.10193->1.10204, TP: 1.10096->1.10088
+2025-06-13 15:59:13,980 - grid_trader.engine.grid_manager - INFO - GM: Attempting regen for slot RG_EURUSD_SLIM_2 (order 377dbf94-2ed5-4941-9439-a0c56ae5fcae), next OM attempt count: 1.
+2025-06-13 15:59:13,981 - grid_trader.engine.risk_manager - INFO - LotCalc (EURUSD): Entry=1.10137, SL=1.10204 (6.70 pips). Risk=$10.00. RawLots=0.1493. FinalLots=0.14. Est.Margin=$154.19
+2025-06-13 15:59:13,981 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(c49f0c | EURUSD SELL_LIMIT 0.14 lots @ 1.10137 SL:1.10204 TP:1.10088 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1)
+2025-06-13 15:59:13,981 - grid_trader.engine.grid_manager - INFO - GM: Slot RG_EURUSD_SLIM_2 regenerated as 209493a5-cf01-458b-87aa-cbfa40c49f0c.
+2025-06-13 15:59:13,981 - grid_trader.engine.order_manager - INFO - Widening SL/TP for regen of RG_EURUSD_SLIM_1. Factor: 1.2. SL: 1.10193->1.10201, TP: 1.10096->1.10085
+2025-06-13 15:59:13,981 - grid_trader.engine.grid_manager - INFO - GM: Attempting regen for slot RG_EURUSD_SLIM_1 (order 19e0cb28-92ce-49ba-a9fe-914fd26c1bea), next OM attempt count: 1.
+2025-06-13 15:59:13,981 - grid_trader.engine.risk_manager - INFO - LotCalc (EURUSD): Entry=1.10151, SL=1.10201 (5.00 pips). Risk=$10.00. RawLots=0.2000. FinalLots=0.20. Est.Margin=$220.30
+2025-06-13 15:59:13,981 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(7aa075 | EURUSD SELL_LIMIT 0.2 lots @ 1.10151 SL:1.10201 TP:1.10085 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1)
+2025-06-13 15:59:13,981 - grid_trader.engine.grid_manager - INFO - GM: Slot RG_EURUSD_SLIM_1 regenerated as ddd3ae7e-a70c-425c-b1f4-9685227aa075.
+2025-06-13 15:59:13,981 - grid_trader.engine.order_manager - INFO - Widening SL/TP for regen of RG_EURUSD_SLIM_0. Factor: 1.2. SL: 1.10193->1.10199, TP: 1.10096->1.10082
+2025-06-13 15:59:13,981 - grid_trader.engine.grid_manager - INFO - GM: Attempting regen for slot RG_EURUSD_SLIM_0 (order 6db01081-94ba-4447-9741-447c3fcdb1bc), next OM attempt count: 1.
+2025-06-13 15:59:13,981 - grid_trader.engine.risk_manager - INFO - LotCalc (EURUSD): Entry=1.10165, SL=1.10199 (3.40 pips). Risk=$10.00. RawLots=0.2941. FinalLots=0.29. Est.Margin=$319.48
+2025-06-13 15:59:13,981 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(66ecd6 | EURUSD SELL_LIMIT 0.29 lots @ 1.10165 SL:1.10199 TP:1.10082 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1)
+2025-06-13 15:59:13,981 - grid_trader.engine.grid_manager - INFO - GM: Slot RG_EURUSD_SLIM_0 regenerated as f779f895-7bac-4957-9642-a8df7366ecd6.
+2025-06-13 15:59:13,994 - grid_trader.engine.order_manager - INFO - Order Filled (Simulated): Order(c49f0c | EURUSD SELL_LIMIT 0.14 lots @ 1.10137 SL:1.10204 TP:1.10088 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1) at 1.1018
+2025-06-13 15:59:13,994 - grid_trader.engine.order_manager - INFO - Order Filled (Simulated): Order(7aa075 | EURUSD SELL_LIMIT 0.2 lots @ 1.10151 SL:1.10201 TP:1.10085 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1) at 1.1018
+2025-06-13 15:59:13,994 - grid_trader.engine.order_manager - INFO - Order Filled (Simulated): Order(66ecd6 | EURUSD SELL_LIMIT 0.29 lots @ 1.10165 SL:1.10199 TP:1.10082 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1) at 1.1018
+2025-06-13 16:01:27,887 - grid_trader.models.base_model - INFO - Initialized DualGridModel for EURUSD buy at 1.1
+2025-06-13 16:01:27,887 - grid_trader.models.dual_grid - INFO - DualGridModel initialized for EURUSD: Breakout Levels=1 (ATR x1.0), Reversal Levels=1 (ATR x0.5), SL ATR x1.0, TP ATR x1.5
+2025-06-13 16:01:27,887 - grid_trader.models.dual_grid - INFO - Generated 0 orders for DualGridModel (EURUSD).
+2025-06-13 16:01:27,891 - grid_trader.models.base_model - INFO - Initialized PyramidGridModel for EURUSD buy at 1.1
+2025-06-13 16:01:27,891 - grid_trader.models.pyramid_grid - INFO - PyramidGridModel initialized for EURUSD buy: Levels=2, SpacingATR_x1.0, SLPrevLvl=True, SL_ATR_x1.0, TP_ATR_x2.0
+2025-06-13 16:01:27,891 - grid_trader.models.pyramid_grid - WARNING - PyramidGrid: Calculated spacing (0.001) is too small for EURUSD. No orders generated.
+2025-06-13 16:01:27,898 - grid_trader.models.base_model - INFO - Initialized RangeGridModel for EURUSD buy at 1.1005
+2025-06-13 16:01:27,898 - grid_trader.models.range_grid - INFO - RangeGridModel initialized for EURUSD: Method='bollinger', LinesPerSide=2, SpacingFraction=0.2, SL_ATR_Buffer=0.5x, TPtargetOtherSide=True
+2025-06-13 16:01:27,898 - grid_trader.models.range_grid - INFO - RangeGrid: Defined range for EURUSD: Low=1.0968, High=1.1009
+2025-06-13 16:01:27,899 - grid_trader.models.range_grid - INFO - Generated 4 orders for RangeGridModel (EURUSD).
+2025-06-13 16:01:27,902 - grid_trader.models.base_model - INFO - Initialized StaticGridModel for EURUSD buy at 1.1
+2025-06-13 16:01:27,902 - grid_trader.models.static_grid - INFO - StaticGridModel initialized for EURUSD buy: NumLines=4, BasePrice=1.1, BaseSL=1.09, BaseTP=1.12, UseBaseTP=False, IndivTP_RR=1.0
+2025-06-13 16:01:27,902 - grid_trader.models.static_grid - WARNING - StaticGrid: Calculated spacing (0.002) is too small for EURUSD with 1 decimals. Min practical spacing: 0.1. No orders generated.
+2025-06-13 16:01:27,905 - grid_trader.models.base_model - INFO - Initialized StaticGridModel for EURUSD buy at 1.089
+2025-06-13 16:01:27,905 - grid_trader.models.static_grid - ERROR - StaticGrid: Base price (1.089) is not appropriately positioned relative to Base SL (1.09) for direction 'buy'.
+2025-06-13 16:01:27,911 - grid_trader.models.base_model - INFO - Initialized StructureGridModel for EURUSD buy at 1.104
+2025-06-13 16:01:27,911 - grid_trader.models.structure_grid - INFO - StructureGridModel initialized for EURUSD buy: SwingLevels=2, EntryBufferATRMultiplier=0.1 (BufferPrice=0.00010), SL_ATR_x1.0, TP_ATR_x1.5, SwingNBarsUsed=1, SHcol='SwingHigh', SLcol='SwingLow'
+2025-06-13 16:01:27,913 - grid_trader.models.structure_grid - INFO - Generated 4 orders for StructureGridModel (EURUSD).
+2025-06-13 16:01:27,916 - grid_trader.models.base_model - INFO - Initialized VolatilityGridModel for EURUSD buy at 1.1
+2025-06-13 16:01:27,916 - grid_trader.models.volatility_grid - INFO - VolatilityGridModel initialized for EURUSD with 2 levels, ATR multiplier 1.0
+2025-06-13 16:01:27,916 - grid_trader.models.volatility_grid - INFO - Generated 0 orders for VolatilityGridModel (EURUSD).
+2025-06-13 16:01:27,919 - grid_trader.models.base_model - ERROR - Missing critical base_trade_params: symbol, direction, base_price, base_sl, or atr.
+2025-06-13 16:06:39,885 - grid_trader.models.base_model - INFO - Initialized DualGridModel for EURUSD buy at 1.1
+2025-06-13 16:06:39,885 - grid_trader.models.dual_grid - INFO - DualGridModel initialized for EURUSD: Breakout Levels=1 (ATR x1.0), Reversal Levels=1 (ATR x0.5), SL ATR x1.0, TP ATR x1.5
+2025-06-13 16:06:39,885 - grid_trader.models.dual_grid - INFO - Generated 4 orders for DualGridModel (EURUSD).
+2025-06-13 16:06:39,888 - grid_trader.models.base_model - INFO - Initialized PyramidGridModel for EURUSD buy at 1.1
+2025-06-13 16:06:39,888 - grid_trader.models.pyramid_grid - INFO - PyramidGridModel initialized for EURUSD buy: Levels=2, SpacingATR_x1.0, SLPrevLvl=True, SL_ATR_x1.0, TP_ATR_x2.0
+2025-06-13 16:06:39,888 - grid_trader.models.pyramid_grid - INFO - Generated 2 orders for PyramidGridModel (EURUSD).
+2025-06-13 16:06:39,894 - grid_trader.models.base_model - INFO - Initialized RangeGridModel for EURUSD buy at 1.1005
+2025-06-13 16:06:39,895 - grid_trader.models.range_grid - INFO - RangeGridModel initialized for EURUSD: Method='bollinger', LinesPerSide=2, SpacingFraction=0.2, SL_ATR_Buffer=0.5x, TPtargetOtherSide=True
+2025-06-13 16:06:39,895 - grid_trader.models.range_grid - INFO - RangeGrid: Defined range for EURUSD: Low=1.09682, High=1.10090
+2025-06-13 16:06:39,895 - grid_trader.models.range_grid - INFO - Generated 4 orders for RangeGridModel (EURUSD).
+2025-06-13 16:06:39,897 - grid_trader.models.base_model - INFO - Initialized StaticGridModel for EURUSD buy at 1.1
+2025-06-13 16:06:39,898 - grid_trader.models.static_grid - INFO - StaticGridModel initialized for EURUSD buy: NumLines=4, BasePrice=1.1, BaseSL=1.09, BaseTP=1.12, UseBaseTP=False, IndivTP_RR=1.0
+2025-06-13 16:06:39,898 - grid_trader.models.static_grid - INFO - Generated 4 orders for StaticGridModel (EURUSD).
+2025-06-13 16:06:39,900 - grid_trader.models.base_model - INFO - Initialized StaticGridModel for EURUSD buy at 1.089
+2025-06-13 16:06:39,901 - grid_trader.models.static_grid - ERROR - StaticGrid: Base price (1.089) is not appropriately positioned relative to Base SL (1.09) for direction 'buy'.
+2025-06-13 16:06:39,906 - grid_trader.models.base_model - INFO - Initialized StructureGridModel for EURUSD buy at 1.104
+2025-06-13 16:06:39,906 - grid_trader.models.structure_grid - INFO - StructureGridModel initialized for EURUSD buy: SwingLevels=2, EntryBufferATRMultiplier=0.1 (BufferPrice=0.00010), SL_ATR_x1.0, TP_ATR_x1.5, SwingNBarsUsed=1, SHcol='SwingHigh', SLcol='SwingLow'
+2025-06-13 16:06:39,907 - grid_trader.models.structure_grid - INFO - Generated 4 orders for StructureGridModel (EURUSD).
+2025-06-13 16:06:39,910 - grid_trader.models.base_model - INFO - Initialized VolatilityGridModel for EURUSD buy at 1.1
+2025-06-13 16:06:39,910 - grid_trader.models.volatility_grid - INFO - VolatilityGridModel initialized for EURUSD with 2 levels, ATR multiplier 1.0
+2025-06-13 16:06:39,910 - grid_trader.models.volatility_grid - INFO - Generated 4 orders for VolatilityGridModel (EURUSD).
+2025-06-13 16:06:39,913 - grid_trader.models.base_model - ERROR - Missing critical base_trade_params: symbol, direction, base_price, base_sl, or atr.

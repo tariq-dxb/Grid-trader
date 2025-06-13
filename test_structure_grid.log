@@ -1,0 +1,23 @@
+2025-06-13 14:38:11,910 - __main__ - INFO - --- Testing StructureGridModel EURUSD (BUY direction) ---
+2025-06-13 14:38:11,911 - __main__ - INFO - StructureGrid: 'SwingHigh' or 'SwingHigh_N2' not in historical_data. Calculating with n_bars=2.
+2025-06-13 14:38:11,915 - __main__ - INFO - StructureGrid: 'SwingLow' or 'SwingLow_N2' not in historical_data. Calculating with n_bars=2.
+2025-06-13 14:38:11,917 - __main__ - INFO - StructureGridModel initialized for EURUSD buy: SwingLevels=3, EntryBufferATRMultiplier=0.05 (BufferPrice=0.00005), SL_ATR_x1.0, TP_ATR_x1.5, SwingNBarsUsed=2, SHcol='SwingHigh_N2', SLcol='SwingLow_N2'
+2025-06-13 14:38:11,921 - __main__ - DEBUG - Recent swing highs for EURUSD (latest 3): [1.112, 1.116]
+2025-06-13 14:38:11,921 - __main__ - DEBUG - Recent swing lows for EURUSD (latest 3): [1.104, 1.107]
+2025-06-13 14:38:11,921 - __main__ - DEBUG - MockRM STG: Lots for EURUSD E:1.1121 SL:1.1111 Risk:10.0 -> 0.01 lots (SL pips: 100.00)
+2025-06-13 14:38:11,921 - __main__ - DEBUG - MockRM STG: Lots for EURUSD E:1.1161 SL:1.1151 Risk:10.0 -> 0.01 lots (SL pips: 100.00)
+2025-06-13 14:38:11,921 - __main__ - DEBUG - MockRM STG: Lots for EURUSD E:1.1069 SL:1.1059 Risk:10.0 -> 0.01 lots (SL pips: 100.00)
+2025-06-13 14:38:11,921 - __main__ - DEBUG - MockRM STG: Lots for EURUSD E:1.1039 SL:1.1029 Risk:10.0 -> 0.01 lots (SL pips: 100.00)
+2025-06-13 14:38:11,921 - __main__ - INFO - Generated 4 orders for StructureGridModel (EURUSD).
+2025-06-13 14:38:11,921 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.1121, 'sl': 1.1111, 'tp': 1.1136, 'lot_size': 0.01, 'grid_id': 'STG_EURUSD_BS_SH@1.1120'}
+2025-06-13 14:38:11,922 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.1161, 'sl': 1.1151, 'tp': 1.1176, 'lot_size': 0.01, 'grid_id': 'STG_EURUSD_BS_SH@1.1160'}
+2025-06-13 14:38:11,922 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_LIMIT', 'entry_price': 1.1069, 'sl': 1.1059, 'tp': 1.1084, 'lot_size': 0.01, 'grid_id': 'STG_EURUSD_BL_SL@1.1070'}
+2025-06-13 14:38:11,922 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_LIMIT', 'entry_price': 1.1039, 'sl': 1.1029, 'tp': 1.1054, 'lot_size': 0.01, 'grid_id': 'STG_EURUSD_BL_SL@1.1040'}
+2025-06-13 14:38:11,922 - __main__ - INFO - --- Testing StructureGridModel EURUSD (SELL direction) ---
+2025-06-13 14:38:11,922 - __main__ - INFO - StructureGrid: 'SwingHigh' or 'SwingHigh_N3' not in historical_data. Calculating with n_bars=3.
+2025-06-13 14:38:11,923 - __main__ - INFO - StructureGrid: 'SwingLow' or 'SwingLow_N3' not in historical_data. Calculating with n_bars=3.
+2025-06-13 14:38:11,923 - __main__ - INFO - StructureGridModel initialized for EURUSD sell: SwingLevels=4, EntryBufferATRMultiplier=0.1 (BufferPrice=0.00008), SL_ATR_x1.2, TP_ATR_x2.0, SwingNBarsUsed=3, SHcol='SwingHigh_N3', SLcol='SwingLow_N3'
+2025-06-13 14:38:11,925 - __main__ - DEBUG - Recent swing highs for EURUSD (latest 4): []
+2025-06-13 14:38:11,925 - __main__ - DEBUG - Recent swing lows for EURUSD (latest 4): []
+2025-06-13 14:38:11,925 - __main__ - INFO - Generated 0 orders for StructureGridModel (EURUSD).
+2025-06-13 14:38:11,925 - __main__ - INFO - --- Testing StructureGridModel with no ATR (buffers/sl/tp rely on it) ---

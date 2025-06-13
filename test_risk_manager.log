@@ -1,0 +1,25 @@
+2025-06-13 15:32:49,665 - __main__ - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 15:32:49,665 - __main__ - INFO - --- Testing EURUSD Lot Sizing ---
+2025-06-13 15:32:49,665 - __main__ - ERROR - Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+2025-06-13 15:33:57,901 - __main__ - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 15:33:57,901 - __main__ - INFO - --- Testing EURUSD Lot Sizing ---
+2025-06-13 15:33:57,902 - __main__ - INFO - LotCalc (EURUSD): Entry=1.1, SL=1.095 (50.00 pips). Risk=$10.00. RawLots=0.0200. FinalLots=0.02. Est.Margin=$22.00
+2025-06-13 15:33:57,903 - __main__ - INFO - EURUSD (50 pip SL, $10 risk): Calculated Lots = 0.02
+2025-06-13 15:33:57,903 - __main__ - WARNING - LotCalc (EURUSD): Raw lot size 0.002 too small for min_lot 0.01 with risk $1 and SL 50.00 pips. Returning 0 lots.
+2025-06-13 15:33:57,903 - __main__ - INFO - EURUSD (50 pip SL, $1 risk): Calculated Lots = 0.0
+2025-06-13 15:33:57,903 - __main__ - INFO - --- Testing USDJPY Lot Sizing ---
+2025-06-13 15:33:57,903 - __main__ - INFO - LotCalc (USDJPY): Entry=130.0, SL=130.5 (50.00 pips). Risk=$10.00. RawLots=0.0235. FinalLots=0.02. Est.Margin=$20.00
+2025-06-13 15:33:57,903 - __main__ - INFO - USDJPY (50 pip SL, $10 risk): Calculated Lots = 0.02
+2025-06-13 15:33:57,903 - __main__ - INFO - --- Testing XAUUSD Lot Sizing ---
+2025-06-13 15:33:57,903 - __main__ - INFO - LotCalc (XAUUSD): Entry=1950.0, SL=1940.0 (1000.00 pips). Risk=$10.00. RawLots=0.0100. FinalLots=0.01. Est.Margin=$0.01
+2025-06-13 15:33:57,904 - __main__ - INFO - XAUUSD ($10 SL, $10 risk): Calculated Lots = 0.01
+2025-06-13 15:33:57,904 - __main__ - INFO - LotCalc (XAUUSD): Entry=1950.0, SL=1949.5 (50.00 pips). Risk=$10.00. RawLots=0.2000. FinalLots=0.20. Est.Margin=$0.20
+2025-06-13 15:33:57,904 - __main__ - INFO - XAUUSD ($0.50 SL, $10 risk): Calculated Lots = 0.2
+2025-06-13 15:33:57,904 - __main__ - INFO - --- Testing Margin Calculation (EURUSD, to see log) ---
+2025-06-13 15:33:57,904 - __main__ - INFO - LotCalc (EURUSD): Entry=1.1, SL=1.095 (50.00 pips). Risk=$10.00. RawLots=0.0200. FinalLots=0.02. Est.Margin=$22.00
+2025-06-13 15:33:57,904 - __main__ - INFO - --- Testing Invalid Symbol ---
+2025-06-13 15:33:57,904 - __main__ - ERROR - Symbol INVALID_SYMBOL not found in SYMBOL_SETTINGS in config.py.
+2025-06-13 15:33:57,904 - __main__ - INFO - Caught expected error for invalid symbol: Configuration for symbol INVALID_SYMBOL not found.
+2025-06-13 15:33:57,904 - __main__ - INFO - --- Testing SL equals Entry ---
+2025-06-13 15:33:57,904 - __main__ - WARNING - LotCalc (EURUSD): Entry price and SL price are identical (1.1). Cannot calculate lot size.
+2025-06-13 15:33:57,904 - __main__ - INFO - RiskManager tests completed.

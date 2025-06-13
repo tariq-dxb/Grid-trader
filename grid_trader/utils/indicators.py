@@ -37,8 +37,8 @@ def calculate_adx(data: pd.DataFrame, period: int) -> pd.DataFrame:
     move_up = high - high.shift(1)
     move_down = low.shift(1) - low
 
-    plus_dm = pd.Series(np.where((move_up > move_down) & (move_up > 0), move_up, 0.0))
-    minus_dm = pd.Series(np.where((move_down > move_up) & (move_down > 0), move_down, 0.0))
+    plus_dm = pd.Series(np.where((move_up > move_down) & (move_up > 0), move_up, 0.0), index=data.index)
+    minus_dm = pd.Series(np.where((move_down > move_up) & (move_down > 0), move_down, 0.0), index=data.index)
 
     # Smoothed +DM, -DM, TR
     # ATR calculation is slightly different for ADX (Wilder's smoothing)
@@ -49,7 +49,16 @@ def calculate_adx(data: pd.DataFrame, period: int) -> pd.DataFrame:
     minus_di = 100 * (minus_dm.ewm(alpha=1/period, adjust=False).mean() / atr_adx)
 
     # ADX
-    dx = 100 * (abs(plus_di - minus_di) / (plus_di + minus_di))
+    # Handle division by zero for dx if (plus_di + minus_di) is zero
+    dx_numerator = abs(plus_di - minus_di)
+    dx_denominator = plus_di + minus_di
+    # Initialize dx with zeros or a suitable value for non-directional periods
+    dx = pd.Series(0.0, index=data.index)
+    # Calculate dx only where denominator is not zero
+    dx = dx.where(dx_denominator == 0, 100 * (dx_numerator / dx_denominator))
+    # Some implementations might set dx to 100 if denominator is 0 but numerator is not,
+    # but for ADX, if no directional movement, ADX should be low. Setting dx to 0 is safer.
+
     adx = dx.ewm(alpha=1/period, adjust=False).mean()
 
     return pd.DataFrame({f'+DI_{period}': plus_di, f'-DI_{period}': minus_di, f'ADX_{period}': adx})
