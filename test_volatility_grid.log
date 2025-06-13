@@ -1,0 +1,88 @@
+2025-06-13 14:21:38,743 - __main__ - INFO - --- Testing EURUSD (BUY example) ---
+2025-06-13 14:21:38,743 - __main__ - INFO - VolatilityGridModel initialized for EURUSD with 3 levels, ATR multiplier 1.0
+2025-06-13 14:21:38,743 - __main__ - DEBUG - MockRM VGrid: Lots for EURUSD E:1.1025 SL:1.1015 Risk:10.0 -> 0.01 lots (SL pips: 100.00000000001118)
+2025-06-13 14:21:38,743 - __main__ - DEBUG - MockRM VGrid: Lots for EURUSD E:1.1005 SL:1.1015 Risk:10.0 -> 0.01 lots (SL pips: 99.99999999998897)
+2025-06-13 14:21:38,743 - __main__ - DEBUG - MockRM VGrid: Lots for EURUSD E:1.1035 SL:1.1025 Risk:10.0 -> 0.01 lots (SL pips: 99.99999999998897)
+2025-06-13 14:21:38,744 - __main__ - DEBUG - MockRM VGrid: Lots for EURUSD E:1.0995 SL:1.1005 Risk:10.0 -> 0.01 lots (SL pips: 100.00000000001118)
+2025-06-13 14:21:38,744 - __main__ - DEBUG - MockRM VGrid: Lots for EURUSD E:1.1045 SL:1.1035 Risk:10.0 -> 0.01 lots (SL pips: 100.00000000001118)
+2025-06-13 14:21:38,744 - __main__ - DEBUG - MockRM VGrid: Lots for EURUSD E:1.0985 SL:1.0995 Risk:10.0 -> 0.01 lots (SL pips: 99.99999999998897)
+2025-06-13 14:21:38,744 - __main__ - INFO - Generated 6 orders for VolatilityGridModel (EURUSD).
+2025-06-13 14:21:38,744 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.1025, 'sl': 1.1015, 'tp': 1.1035, 'lot_size': 0.01, 'grid_id': 'VG_EURUSD_BUY_STOP_1'}
+2025-06-13 14:21:38,744 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_STOP', 'entry_price': 1.1005, 'sl': 1.1015, 'tp': 1.0995, 'lot_size': 0.01, 'grid_id': 'VG_EURUSD_SELL_STOP_1'}
+2025-06-13 14:21:38,744 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.1035, 'sl': 1.1025, 'tp': 1.1045, 'lot_size': 0.01, 'grid_id': 'VG_EURUSD_BUY_STOP_2'}
+2025-06-13 14:21:38,744 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_STOP', 'entry_price': 1.0995, 'sl': 1.1005, 'tp': 1.0985, 'lot_size': 0.01, 'grid_id': 'VG_EURUSD_SELL_STOP_2'}
+2025-06-13 14:21:38,744 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.1045, 'sl': 1.1035, 'tp': 1.1055, 'lot_size': 0.01, 'grid_id': 'VG_EURUSD_BUY_STOP_3'}
+2025-06-13 14:21:38,744 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_STOP', 'entry_price': 1.0985, 'sl': 1.0995, 'tp': 1.0975, 'lot_size': 0.01, 'grid_id': 'VG_EURUSD_SELL_STOP_3'}
+2025-06-13 14:21:38,744 - __main__ - INFO - --- Testing USDJPY (SELL example) ---
+2025-06-13 14:21:38,744 - __main__ - INFO - VolatilityGridModel initialized for USDJPY with 2 levels, ATR multiplier 0.5
+2025-06-13 14:21:38,744 - __main__ - DEBUG - MockRM VGrid: Lots for USDJPY E:130.6 SL:130.5 Risk:10.0 -> 0.11 lots (SL pips: 99.99999999999432)
+2025-06-13 14:21:38,744 - __main__ - DEBUG - MockRM VGrid: Lots for USDJPY E:130.4 SL:130.5 Risk:10.0 -> 0.11 lots (SL pips: 99.99999999999432)
+2025-06-13 14:21:38,744 - __main__ - DEBUG - MockRM VGrid: Lots for USDJPY E:130.7 SL:130.6 Risk:10.0 -> 0.11 lots (SL pips: 99.99999999999432)
+2025-06-13 14:21:38,744 - __main__ - DEBUG - MockRM VGrid: Lots for USDJPY E:130.3 SL:130.4 Risk:10.0 -> 0.11 lots (SL pips: 99.99999999999432)
+2025-06-13 14:21:38,744 - __main__ - INFO - Generated 4 orders for VolatilityGridModel (USDJPY).
+2025-06-13 14:21:38,744 - __main__ - INFO -   {'symbol': 'USDJPY', 'order_type': 'BUY_STOP', 'entry_price': 130.6, 'sl': 130.5, 'tp': 130.7, 'lot_size': 0.11, 'grid_id': 'VG_USDJPY_BUY_STOP_1'}
+2025-06-13 14:21:38,744 - __main__ - INFO -   {'symbol': 'USDJPY', 'order_type': 'SELL_STOP', 'entry_price': 130.4, 'sl': 130.5, 'tp': 130.3, 'lot_size': 0.11, 'grid_id': 'VG_USDJPY_SELL_STOP_1'}
+2025-06-13 14:21:38,744 - __main__ - INFO -   {'symbol': 'USDJPY', 'order_type': 'BUY_STOP', 'entry_price': 130.7, 'sl': 130.6, 'tp': 130.8, 'lot_size': 0.11, 'grid_id': 'VG_USDJPY_BUY_STOP_2'}
+2025-06-13 14:21:38,744 - __main__ - INFO -   {'symbol': 'USDJPY', 'order_type': 'SELL_STOP', 'entry_price': 130.3, 'sl': 130.4, 'tp': 130.2, 'lot_size': 0.11, 'grid_id': 'VG_USDJPY_SELL_STOP_2'}
+2025-06-13 14:21:38,745 - __main__ - INFO - --- Testing XAUUSD (BUY example) ---
+2025-06-13 14:21:38,745 - __main__ - INFO - VolatilityGridModel initialized for XAUUSD with 3 levels, ATR multiplier 1.0
+2025-06-13 14:21:38,745 - __main__ - DEBUG - MockRM VGrid: Lots for XAUUSD E:1955.5 SL:1950.5 Risk:10.0 -> 0.02 lots (SL pips: 500.0)
+2025-06-13 14:21:38,745 - __main__ - DEBUG - MockRM VGrid: Lots for XAUUSD E:1945.5 SL:1950.5 Risk:10.0 -> 0.02 lots (SL pips: 500.0)
+2025-06-13 14:21:38,745 - __main__ - DEBUG - MockRM VGrid: Lots for XAUUSD E:1960.5 SL:1955.5 Risk:10.0 -> 0.02 lots (SL pips: 500.0)
+2025-06-13 14:21:38,745 - __main__ - DEBUG - MockRM VGrid: Lots for XAUUSD E:1940.5 SL:1945.5 Risk:10.0 -> 0.02 lots (SL pips: 500.0)
+2025-06-13 14:21:38,745 - __main__ - DEBUG - MockRM VGrid: Lots for XAUUSD E:1965.5 SL:1960.5 Risk:10.0 -> 0.02 lots (SL pips: 500.0)
+2025-06-13 14:21:38,745 - __main__ - DEBUG - MockRM VGrid: Lots for XAUUSD E:1935.5 SL:1940.5 Risk:10.0 -> 0.02 lots (SL pips: 500.0)
+2025-06-13 14:21:38,745 - __main__ - INFO - Generated 6 orders for VolatilityGridModel (XAUUSD).
+2025-06-13 14:21:38,745 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'BUY_STOP', 'entry_price': 1955.5, 'sl': 1950.5, 'tp': 1960.5, 'lot_size': 0.02, 'grid_id': 'VG_XAUUSD_BUY_STOP_1'}
+2025-06-13 14:21:38,745 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'SELL_STOP', 'entry_price': 1945.5, 'sl': 1950.5, 'tp': 1940.5, 'lot_size': 0.02, 'grid_id': 'VG_XAUUSD_SELL_STOP_1'}
+2025-06-13 14:21:38,745 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'BUY_STOP', 'entry_price': 1960.5, 'sl': 1955.5, 'tp': 1965.5, 'lot_size': 0.02, 'grid_id': 'VG_XAUUSD_BUY_STOP_2'}
+2025-06-13 14:21:38,745 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'SELL_STOP', 'entry_price': 1940.5, 'sl': 1945.5, 'tp': 1935.5, 'lot_size': 0.02, 'grid_id': 'VG_XAUUSD_SELL_STOP_2'}
+2025-06-13 14:21:38,745 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'BUY_STOP', 'entry_price': 1965.5, 'sl': 1960.5, 'tp': 1970.5, 'lot_size': 0.02, 'grid_id': 'VG_XAUUSD_BUY_STOP_3'}
+2025-06-13 14:21:38,745 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'SELL_STOP', 'entry_price': 1935.5, 'sl': 1940.5, 'tp': 1930.5, 'lot_size': 0.02, 'grid_id': 'VG_XAUUSD_SELL_STOP_3'}
+2025-06-13 14:21:38,745 - __main__ - INFO - --- Testing Zero ATR ---
+2025-06-13 14:22:24,418 - __main__ - INFO - --- Testing EURUSD (BUY example) ---
+2025-06-13 14:22:24,418 - __main__ - INFO - VolatilityGridModel initialized for EURUSD with 3 levels, ATR multiplier 1.0
+2025-06-13 14:22:24,418 - __main__ - DEBUG - MockRM VGrid: Lots for EURUSD E:1.1025 SL:1.1015 Risk:10.0 -> 0.01 lots (SL pips: 100.00000000001118)
+2025-06-13 14:22:24,418 - __main__ - DEBUG - MockRM VGrid: Lots for EURUSD E:1.1005 SL:1.1015 Risk:10.0 -> 0.01 lots (SL pips: 99.99999999998897)
+2025-06-13 14:22:24,418 - __main__ - DEBUG - MockRM VGrid: Lots for EURUSD E:1.1035 SL:1.1025 Risk:10.0 -> 0.01 lots (SL pips: 99.99999999998897)
+2025-06-13 14:22:24,418 - __main__ - DEBUG - MockRM VGrid: Lots for EURUSD E:1.0995 SL:1.1005 Risk:10.0 -> 0.01 lots (SL pips: 100.00000000001118)
+2025-06-13 14:22:24,418 - __main__ - DEBUG - MockRM VGrid: Lots for EURUSD E:1.1045 SL:1.1035 Risk:10.0 -> 0.01 lots (SL pips: 100.00000000001118)
+2025-06-13 14:22:24,418 - __main__ - DEBUG - MockRM VGrid: Lots for EURUSD E:1.0985 SL:1.0995 Risk:10.0 -> 0.01 lots (SL pips: 99.99999999998897)
+2025-06-13 14:22:24,419 - __main__ - INFO - Generated 6 orders for VolatilityGridModel (EURUSD).
+2025-06-13 14:22:24,419 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.1025, 'sl': 1.1015, 'tp': 1.1035, 'lot_size': 0.01, 'grid_id': 'VG_EURUSD_BUY_STOP_1'}
+2025-06-13 14:22:24,419 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_STOP', 'entry_price': 1.1005, 'sl': 1.1015, 'tp': 1.0995, 'lot_size': 0.01, 'grid_id': 'VG_EURUSD_SELL_STOP_1'}
+2025-06-13 14:22:24,419 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.1035, 'sl': 1.1025, 'tp': 1.1045, 'lot_size': 0.01, 'grid_id': 'VG_EURUSD_BUY_STOP_2'}
+2025-06-13 14:22:24,419 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_STOP', 'entry_price': 1.0995, 'sl': 1.1005, 'tp': 1.0985, 'lot_size': 0.01, 'grid_id': 'VG_EURUSD_SELL_STOP_2'}
+2025-06-13 14:22:24,419 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.1045, 'sl': 1.1035, 'tp': 1.1055, 'lot_size': 0.01, 'grid_id': 'VG_EURUSD_BUY_STOP_3'}
+2025-06-13 14:22:24,419 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_STOP', 'entry_price': 1.0985, 'sl': 1.0995, 'tp': 1.0975, 'lot_size': 0.01, 'grid_id': 'VG_EURUSD_SELL_STOP_3'}
+2025-06-13 14:22:24,419 - __main__ - INFO - --- Testing USDJPY (SELL example) ---
+2025-06-13 14:22:24,419 - __main__ - INFO - VolatilityGridModel initialized for USDJPY with 2 levels, ATR multiplier 0.5
+2025-06-13 14:22:24,419 - __main__ - DEBUG - MockRM VGrid: Lots for USDJPY E:130.6 SL:130.5 Risk:10.0 -> 0.11 lots (SL pips: 99.99999999999432)
+2025-06-13 14:22:24,419 - __main__ - DEBUG - MockRM VGrid: Lots for USDJPY E:130.4 SL:130.5 Risk:10.0 -> 0.11 lots (SL pips: 99.99999999999432)
+2025-06-13 14:22:24,419 - __main__ - DEBUG - MockRM VGrid: Lots for USDJPY E:130.7 SL:130.6 Risk:10.0 -> 0.11 lots (SL pips: 99.99999999999432)
+2025-06-13 14:22:24,419 - __main__ - DEBUG - MockRM VGrid: Lots for USDJPY E:130.3 SL:130.4 Risk:10.0 -> 0.11 lots (SL pips: 99.99999999999432)
+2025-06-13 14:22:24,419 - __main__ - INFO - Generated 4 orders for VolatilityGridModel (USDJPY).
+2025-06-13 14:22:24,419 - __main__ - INFO -   {'symbol': 'USDJPY', 'order_type': 'BUY_STOP', 'entry_price': 130.6, 'sl': 130.5, 'tp': 130.7, 'lot_size': 0.11, 'grid_id': 'VG_USDJPY_BUY_STOP_1'}
+2025-06-13 14:22:24,419 - __main__ - INFO -   {'symbol': 'USDJPY', 'order_type': 'SELL_STOP', 'entry_price': 130.4, 'sl': 130.5, 'tp': 130.3, 'lot_size': 0.11, 'grid_id': 'VG_USDJPY_SELL_STOP_1'}
+2025-06-13 14:22:24,419 - __main__ - INFO -   {'symbol': 'USDJPY', 'order_type': 'BUY_STOP', 'entry_price': 130.7, 'sl': 130.6, 'tp': 130.8, 'lot_size': 0.11, 'grid_id': 'VG_USDJPY_BUY_STOP_2'}
+2025-06-13 14:22:24,419 - __main__ - INFO -   {'symbol': 'USDJPY', 'order_type': 'SELL_STOP', 'entry_price': 130.3, 'sl': 130.4, 'tp': 130.2, 'lot_size': 0.11, 'grid_id': 'VG_USDJPY_SELL_STOP_2'}
+2025-06-13 14:22:24,420 - __main__ - INFO - --- Testing XAUUSD (BUY example) ---
+2025-06-13 14:22:24,420 - __main__ - INFO - VolatilityGridModel initialized for XAUUSD with 3 levels, ATR multiplier 1.0
+2025-06-13 14:22:24,420 - __main__ - DEBUG - MockRM VGrid: Lots for XAUUSD E:1955.5 SL:1950.5 Risk:10.0 -> 0.02 lots (SL pips: 500.0)
+2025-06-13 14:22:24,420 - __main__ - DEBUG - MockRM VGrid: Lots for XAUUSD E:1945.5 SL:1950.5 Risk:10.0 -> 0.02 lots (SL pips: 500.0)
+2025-06-13 14:22:24,420 - __main__ - DEBUG - MockRM VGrid: Lots for XAUUSD E:1960.5 SL:1955.5 Risk:10.0 -> 0.02 lots (SL pips: 500.0)
+2025-06-13 14:22:24,420 - __main__ - DEBUG - MockRM VGrid: Lots for XAUUSD E:1940.5 SL:1945.5 Risk:10.0 -> 0.02 lots (SL pips: 500.0)
+2025-06-13 14:22:24,420 - __main__ - DEBUG - MockRM VGrid: Lots for XAUUSD E:1965.5 SL:1960.5 Risk:10.0 -> 0.02 lots (SL pips: 500.0)
+2025-06-13 14:22:24,420 - __main__ - DEBUG - MockRM VGrid: Lots for XAUUSD E:1935.5 SL:1940.5 Risk:10.0 -> 0.02 lots (SL pips: 500.0)
+2025-06-13 14:22:24,420 - __main__ - INFO - Generated 6 orders for VolatilityGridModel (XAUUSD).
+2025-06-13 14:22:24,420 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'BUY_STOP', 'entry_price': 1955.5, 'sl': 1950.5, 'tp': 1960.5, 'lot_size': 0.02, 'grid_id': 'VG_XAUUSD_BUY_STOP_1'}
+2025-06-13 14:22:24,420 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'SELL_STOP', 'entry_price': 1945.5, 'sl': 1950.5, 'tp': 1940.5, 'lot_size': 0.02, 'grid_id': 'VG_XAUUSD_SELL_STOP_1'}
+2025-06-13 14:22:24,420 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'BUY_STOP', 'entry_price': 1960.5, 'sl': 1955.5, 'tp': 1965.5, 'lot_size': 0.02, 'grid_id': 'VG_XAUUSD_BUY_STOP_2'}
+2025-06-13 14:22:24,420 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'SELL_STOP', 'entry_price': 1940.5, 'sl': 1945.5, 'tp': 1935.5, 'lot_size': 0.02, 'grid_id': 'VG_XAUUSD_SELL_STOP_2'}
+2025-06-13 14:22:24,420 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'BUY_STOP', 'entry_price': 1965.5, 'sl': 1960.5, 'tp': 1970.5, 'lot_size': 0.02, 'grid_id': 'VG_XAUUSD_BUY_STOP_3'}
+2025-06-13 14:22:24,420 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'SELL_STOP', 'entry_price': 1935.5, 'sl': 1940.5, 'tp': 1930.5, 'lot_size': 0.02, 'grid_id': 'VG_XAUUSD_SELL_STOP_3'}
+2025-06-13 14:22:24,420 - __main__ - INFO - --- Testing Zero ATR ---
+2025-06-13 14:22:24,420 - __main__ - INFO - Caught expected ValueError for zero ATR: Missing critical base_trade_params: symbol, direction, base_price, base_sl, or atr.
+2025-06-13 14:22:24,421 - __main__ - INFO - --- Testing with ATR that might cause overlapping prices if not careful ---
+2025-06-13 14:22:24,421 - __main__ - INFO - VolatilityGridModel initialized for EURUSD with 1 levels, ATR multiplier 1.0
+2025-06-13 14:22:24,421 - __main__ - INFO - Generated 0 orders for VolatilityGridModel (EURUSD).

@@ -1,0 +1,5 @@
+2025-06-13 14:16:31,178 - __main__ - DEBUG - This is a debug message from __main__ using logger_main_test_output.log.
+2025-06-13 14:16:31,179 - __main__ - INFO - This is an info message from __main__ using logger_main_test_output.log.
+2025-06-13 14:16:31,179 - __main__ - WARNING - This is a warning message from __main__ using logger_main_test_output.log.
+2025-06-13 14:16:31,179 - test_module - INFO - Info from test_module.
+2025-06-13 14:16:31,179 - test_module - DEBUG - Debug from test_module.

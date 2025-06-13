@@ -1,0 +1,14 @@
+2025-06-13 14:19:34,409 - __main__ - INFO - --- Testing DummyGridModel ---
+2025-06-13 14:19:34,409 - __main__ - INFO - Initialized DummyGridModel for EURUSD buy at 1.1015
+2025-06-13 14:19:34,409 - __main__ - INFO - DummyGridModel generating orders for EURUSD around 1.1015
+2025-06-13 14:19:34,409 - __main__ - DEBUG - MockRM: Calc lots for EURUSD: entry=1.103, sl=1.1015, risk=10.0, sl_pips=15.000000000000568, lots=0.07
+2025-06-13 14:19:34,409 - __main__ - DEBUG - MockRM: Calc lots for EURUSD: entry=1.10225, sl=1.10375, risk=10.0, sl_pips=15.000000000000568, lots=0.07
+2025-06-13 14:19:34,409 - __main__ - INFO - DummyGridModel generated 2 orders.
+2025-06-13 14:19:34,409 - __main__ - INFO - Generated 2 orders:
+2025-06-13 14:19:34,409 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.103, 'sl': 1.1015, 'tp': 1.106, 'lot_size': 0.07, 'grid_id': 'DummyGridModel_BS1'}
+2025-06-13 14:19:34,409 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_LIMIT', 'entry_price': 1.10225, 'sl': 1.10375, 'tp': 1.1, 'lot_size': 0.07, 'grid_id': 'DummyGridModel_SL1'}
+2025-06-13 14:19:34,409 - __main__ - INFO - --- Testing BaseGridModel validation ---
+2025-06-13 14:19:34,409 - __main__ - ERROR - Invalid trade direction: sideways. Must be 'buy' or 'sell'.
+2025-06-13 14:19:34,409 - __main__ - ERROR - Caught expected error: Invalid trade direction: sideways. Must be 'buy' or 'sell'.
+2025-06-13 14:19:34,409 - __main__ - ERROR - Missing critical base_trade_params: symbol, direction, base_price, base_sl, or atr.
+2025-06-13 14:19:34,409 - __main__ - ERROR - Caught expected error for missing atr: Missing critical base_trade_params: symbol, direction, base_price, base_sl, or atr.
