@@ -1,0 +1,86 @@
+2025-06-13 15:46:14,783 - __main__ - INFO - GridManager initialized.
+2025-06-13 15:46:14,783 - __main__ - INFO - --- Testing GridManager: create_new_grid ---
+2025-06-13 15:46:14,792 - __main__ - INFO - GridManager: SignalRouter selected 'StaticGridModel' for symbol EURUSD. Reason: Default (Static for buy). Vol:NORMAL, Trend:None(ADX:N/A), Range:None, NearSH:None, NearSL:None
+2025-06-13 15:46:14,792 - __main__ - DEBUG - GridManager: Using model params for StaticGridModel: {}
+2025-06-13 15:46:14,792 - __main__ - ERROR - GridManager: Failed to instantiate model StaticGridModel: Missing critical base_trade_params: symbol, direction, base_price, base_sl, or atr.
+Traceback (most recent call last):
+  File "/app/grid_trader/engine/grid_manager.py", line 88, in create_new_grid
+    model_instance = ModelClass(
+  File "/app/grid_trader/models/static_grid.py", line 31, in __init__
+    super().__init__(base_trade_params, historical_data, risk_manager)
+  File "/app/grid_trader/models/base_model.py", line 48, in __init__
+    raise ValueError(msg)
+ValueError: Missing critical base_trade_params: symbol, direction, base_price, base_sl, or atr.
+2025-06-13 15:48:34,569 - __main__ - INFO - GridManager initialized.
+2025-06-13 15:48:34,569 - __main__ - INFO - --- Testing GridManager: create_new_grid ---
+2025-06-13 15:48:34,573 - __main__ - DEBUG - MockSignalRouterGM initialized with base_params: {'symbol': 'EURUSD', 'direction': 'buy', 'base_price': 1.11, 'atr': 0.001, 'base_sl': 1.107, 'base_tp': 1.113, 'base_size_lots': 0.01}
+2025-06-13 15:48:34,573 - __main__ - INFO - GridManager: SignalRouter selected 'VolatilityGridModel' for EURUSD. Reason: MockedSelection_Volatility
+2025-06-13 15:48:34,573 - __main__ - DEBUG - GridManager: Using model params for VolatilityGridModel: {'num_levels': 2, 'atr_multiplier': 0.8}
+2025-06-13 15:48:34,573 - __main__ - INFO - MockVolatilityGridModel instantiated with base: 1.11 and kwargs: {'num_levels': 2, 'atr_multiplier': 0.8}
+2025-06-13 15:48:34,573 - __main__ - INFO - GridManager: Created grid 'grid_volatilitygrid_EURUSD_1749829714' (1 orders) using VolatilityGridModel.
+2025-06-13 15:48:34,573 - __main__ - INFO - Created grid: ActiveGrid(ID: 829714, Model: VolatilityGridModel, BasePrice: 1.11, Orders: 1)
+2025-06-13 15:48:34,573 - __main__ - INFO - --- Testing GridManager: _handle_regenerations ---
+2025-06-13 15:48:34,573 - __main__ - INFO - Manually set order fca93304-6748-4bef-889e-754266aae36e to STOPPED_OUT for regen test.
+2025-06-13 15:48:34,573 - __main__ - INFO - GridManager: Attempting regen for slot EURUSD_slot1 (order fca93304-6748-4bef-889e-754266aae36e), attempt count for next: 0.
+2025-06-13 15:48:34,574 - __main__ - INFO - GridManager: Slot EURUSD_slot1 regenerated as d4dc8db7-8444-4119-a186-6881075c24b5.
+2025-06-13 15:48:34,574 - __main__ - INFO - Found 1st regenerated order: Order(5c24b5 | EURUSD BUY_STOP 0.01 lots @ 1.111 SL:1.11 TP:1.112 | Status: PENDING | GridID: grid_volatilitygrid_EURUSD_1749829714 | Regen: 1)
+2025-06-13 15:48:34,574 - __main__ - INFO - Manually set order d4dc8db7-8444-4119-a186-6881075c24b5 to STOPPED_OUT for 2nd regen test.
+2025-06-13 15:48:34,574 - __main__ - DEBUG - Slot EURUSD_slot1 (order d4dc8db7-8444-4119-a186-6881075c24b5) in cooldown.
+2025-06-13 15:49:14,113 - __main__ - INFO - GridManager initialized.
+2025-06-13 15:49:14,113 - __main__ - INFO - --- Testing GridManager: create_new_grid ---
+2025-06-13 15:49:14,117 - __main__ - DEBUG - MockSignalRouterGM initialized with base_params: {'symbol': 'EURUSD', 'direction': 'buy', 'base_price': 1.11, 'atr': 0.001, 'base_sl': 1.107, 'base_tp': 1.113, 'base_size_lots': 0.01}
+2025-06-13 15:49:14,117 - __main__ - INFO - GridManager: SignalRouter selected 'VolatilityGridModel' for EURUSD. Reason: MockedSelection_Volatility
+2025-06-13 15:49:14,117 - __main__ - DEBUG - GridManager: Using model params for VolatilityGridModel: {'num_levels': 2, 'atr_multiplier': 0.8}
+2025-06-13 15:49:14,117 - __main__ - INFO - MockVolatilityGridModel instantiated with base: 1.11 and kwargs: {'num_levels': 2, 'atr_multiplier': 0.8}
+2025-06-13 15:49:14,117 - __main__ - INFO - GridManager: Created grid 'grid_volatilitygrid_EURUSD_1749829754' (1 orders) using VolatilityGridModel.
+2025-06-13 15:49:14,117 - __main__ - INFO - Created grid: ActiveGrid(ID: 829754, Model: VolatilityGridModel, BasePrice: 1.11, Orders: 1)
+2025-06-13 15:49:14,117 - __main__ - INFO - --- Testing GridManager: _handle_regenerations ---
+2025-06-13 15:49:14,117 - __main__ - INFO - Manually set order dd573ee6-6b79-4d7e-8e80-554f5ce9a81a to STOPPED_OUT for regen test.
+2025-06-13 15:49:14,118 - __main__ - INFO - GridManager: Attempting regen for slot EURUSD_slot1 (order dd573ee6-6b79-4d7e-8e80-554f5ce9a81a), attempt count for next: 0.
+2025-06-13 15:49:14,118 - __main__ - INFO - GridManager: Slot EURUSD_slot1 regenerated as 989eda87-5ea6-4481-b2f4-6b5f1d3a51ed.
+2025-06-13 15:49:14,118 - __main__ - INFO - Found 1st regenerated order: Order(3a51ed | EURUSD BUY_STOP 0.01 lots @ 1.111 SL:1.11 TP:1.112 | Status: PENDING | GridID: grid_volatilitygrid_EURUSD_1749829754 | Regen: 1)
+2025-06-13 15:49:14,118 - __main__ - INFO - Manually set order 989eda87-5ea6-4481-b2f4-6b5f1d3a51ed to STOPPED_OUT for 2nd regen test.
+2025-06-13 15:49:14,118 - __main__ - DEBUG - Slot EURUSD_slot1 (order 989eda87-5ea6-4481-b2f4-6b5f1d3a51ed) in cooldown.
+2025-06-13 15:50:42,056 - __main__ - INFO - GridManager initialized.
+2025-06-13 15:50:42,057 - __main__ - INFO - --- Testing GridManager: create_new_grid ---
+2025-06-13 15:50:42,061 - __main__ - DEBUG - MockSignalRouterGM init with base_params: {'symbol': 'EURUSD', 'direction': 'buy', 'base_price': 1.11, 'atr': 0.001, 'base_sl': 1.107, 'base_tp': 1.113, 'base_size_lots': 0.01}
+2025-06-13 15:50:42,061 - __main__ - INFO - GridManager: SignalRouter selected 'VolatilityGridModel' for EURUSD. Reason: MockedSelection_Volatility
+2025-06-13 15:50:42,061 - __main__ - DEBUG - GridManager: Using model params for VolatilityGridModel: {'num_levels': 2, 'atr_multiplier': 0.8}
+2025-06-13 15:50:42,061 - __main__ - INFO - MockVolatilityGridModel instantiated with base: 1.11 and kwargs: {'num_levels': 2, 'atr_multiplier': 0.8}
+2025-06-13 15:50:42,061 - __main__ - INFO - GridManager: Created grid 'grid_volatilitygrid_EURUSD_1749829842' (1 orders) using VolatilityGridModel.
+2025-06-13 15:50:42,061 - __main__ - INFO - Created grid: ActiveGrid(ID: 829842, Model: VolatilityGridModel, BasePrice: 1.11, Orders: 1)
+2025-06-13 15:50:42,062 - __main__ - INFO - --- Testing GridManager: _handle_regenerations ---
+2025-06-13 15:50:42,062 - __main__ - INFO - Manually set order 818a3e7f-15d1-48ad-9667-1d07c7db17da to STOPPED_OUT for regen test.
+2025-06-13 15:50:42,062 - __main__ - INFO - GridManager: Attempting regen for slot EURUSD_slot1 (order 818a3e7f-15d1-48ad-9667-1d07c7db17da), next attempt count in OM: 1.
+2025-06-13 15:50:42,062 - __main__ - INFO - GridManager: Slot EURUSD_slot1 regenerated as 8deaefd6-1ddb-4d0f-8e10-14d1a2e05af9.
+2025-06-13 15:50:42,062 - __main__ - INFO - Found 1st regenerated order: Order(e05af9 | EURUSD BUY_STOP 0.01 lots @ 1.111 SL:1.11 TP:1.112 | Status: PENDING | GridID: grid_volatilitygrid_EURUSD_1749829842 | Regen: 1)
+2025-06-13 15:50:42,062 - __main__ - INFO - Manually set order 8deaefd6-1ddb-4d0f-8e10-14d1a2e05af9 to STOPPED_OUT for 2nd regen test.
+2025-06-13 15:50:42,062 - __main__ - INFO - GridManager: Attempting regen for slot EURUSD_slot1 (order 8deaefd6-1ddb-4d0f-8e10-14d1a2e05af9), next attempt count in OM: 2.
+2025-06-13 15:50:42,062 - __main__ - INFO - GridManager: Slot EURUSD_slot1 regenerated as 0e805aca-c229-4001-8ac6-db135488cf8f.
+2025-06-13 15:50:42,062 - __main__ - INFO - Found 2nd regenerated order: Order(88cf8f | EURUSD BUY_STOP 0.01 lots @ 1.111 SL:1.11 TP:1.113 | Status: PENDING | GridID: grid_volatilitygrid_EURUSD_1749829842 | Regen: 2)
+2025-06-13 15:50:42,062 - __main__ - INFO - Manually set order 0e805aca-c229-4001-8ac6-db135488cf8f to STOPPED_OUT for 3rd regen test (should not regen).
+2025-06-13 15:50:42,062 - __main__ - INFO - GridManager: Attempting regen for slot EURUSD_slot1 (order 0e805aca-c229-4001-8ac6-db135488cf8f), next attempt count in OM: 3.
+2025-06-13 15:50:42,063 - __main__ - INFO - GridManager: Slot EURUSD_slot1 regenerated as a90ba9fd-16ec-4cdd-a9e7-3bffd111cfc6.
+2025-06-13 15:53:09,569 - __main__ - INFO - GridManager initialized.
+2025-06-13 15:53:09,569 - __main__ - INFO - --- Testing GridManager: create_new_grid ---
+2025-06-13 15:53:09,573 - __main__ - DEBUG - MockSignalRouterGM init with base_params: {'symbol': 'EURUSD', 'direction': 'buy', 'base_price': 1.11, 'atr': 0.001, 'base_sl': 1.107, 'base_tp': 1.113, 'base_size_lots': 0.01}
+2025-06-13 15:53:09,573 - __main__ - INFO - GM: SignalRouter selected 'VolatilityGridModel' for EURUSD. Reason: MockedSelection_Volatility
+2025-06-13 15:53:09,573 - __main__ - DEBUG - GM: Using model params for VolatilityGridModel: {'num_levels': 2, 'atr_multiplier': 0.8}
+2025-06-13 15:53:09,574 - __main__ - INFO - MockVolatilityGridModel instantiated with base: 1.11 and kwargs: {'num_levels': 2, 'atr_multiplier': 0.8}
+2025-06-13 15:53:09,574 - __main__ - DEBUG - MockRMGM: Calc lots for EURUSD E:1.111 SL:1.11
+2025-06-13 15:53:09,574 - __main__ - INFO - GM: Created grid 'grid_volatilitygrid_EURUSD_1749829989' (1 orders) using VolatilityGridModel.
+2025-06-13 15:53:09,574 - __main__ - INFO - Created grid: ActiveGrid(ID: 829989, Model: VolatilityGridModel, BasePrice: 1.11, Orders: 1)
+2025-06-13 15:53:09,574 - __main__ - INFO - --- Testing GridManager: _handle_regenerations ---
+2025-06-13 15:53:09,574 - __main__ - INFO - Manually set fdc86f5a-d6da-488d-9de1-88b9a646a92c to STOPPED_OUT for 1st regen test.
+2025-06-13 15:53:09,574 - __main__ - INFO - GM: Attempting regen for slot EURUSD_slot1 (order fdc86f5a-d6da-488d-9de1-88b9a646a92c), next OM attempt count: 1.
+2025-06-13 15:53:09,574 - __main__ - DEBUG - MockRMGM: Calc lots for EURUSD E:1.111 SL:1.11
+2025-06-13 15:53:09,574 - __main__ - INFO - GM: Slot EURUSD_slot1 regenerated as a72546dd-01d5-4da1-9490-66124dfbb21c.
+2025-06-13 15:53:09,574 - __main__ - INFO - Found 1st regen: Order(fbb21c | EURUSD BUY_STOP 0.01 lots @ 1.111 SL:1.11 TP:1.112 | Status: PENDING | GridID: grid_volatilitygrid_EURUSD_1749829989 | Regen: 1)
+2025-06-13 15:53:09,574 - __main__ - INFO - Manually set a72546dd-01d5-4da1-9490-66124dfbb21c to STOPPED_OUT for 2nd regen test.
+2025-06-13 15:53:09,574 - __main__ - INFO - GM: Attempting regen for slot EURUSD_slot1 (order a72546dd-01d5-4da1-9490-66124dfbb21c), next OM attempt count: 2.
+2025-06-13 15:53:09,574 - __main__ - DEBUG - MockRMGM: Calc lots for EURUSD E:1.111 SL:1.11
+2025-06-13 15:53:09,574 - __main__ - INFO - GM: Slot EURUSD_slot1 regenerated as 9b43b89e-498b-4517-9e6d-6686c9d1b7d4.
+2025-06-13 15:53:09,574 - __main__ - INFO - Found 2nd regen: Order(d1b7d4 | EURUSD BUY_STOP 0.01 lots @ 1.111 SL:1.11 TP:1.113 | Status: PENDING | GridID: grid_volatilitygrid_EURUSD_1749829989 | Regen: 2)
+2025-06-13 15:53:09,575 - __main__ - INFO - Manually set 9b43b89e-498b-4517-9e6d-6686c9d1b7d4 to STOPPED_OUT for 3rd regen test (should not regen).
+2025-06-13 15:53:09,575 - __main__ - INFO - Slot EURUSD_slot1 (order 9b43b89e-498b-4517-9e6d-6686c9d1b7d4) needs no further regen.
+2025-06-13 15:53:09,575 - __main__ - INFO - GridManager tests complete.

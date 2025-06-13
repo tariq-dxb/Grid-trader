@@ -94,7 +94,7 @@ class BaseGridModel(ABC):
                     entry_price=entry_price,
                     sl_price=sl_price,
                     risk_per_trade_usd=risk_per_trade_usd,
-                    account_balance=self.risk_manager.get_account_balance() # Assuming risk_manager has this
+                    account_balance_override=self.risk_manager.get_account_balance() # Changed to account_balance_override
                 )
                 return lot_size
             except Exception as e:

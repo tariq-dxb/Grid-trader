@@ -1,0 +1,14 @@
+2025-06-13 15:41:00,910 - __main__ - ERROR - Test setup: Hist data empty post-dropna.
+2025-06-13 15:41:38,228 - __main__ - ERROR - Test setup: Hist data empty post-dropna.
+2025-06-13 15:42:26,532 - __main__ - ERROR - Test setup: Hist data empty post-dropna.
+2025-06-13 15:43:10,629 - __main__ - INFO - Test setup: Hist data ready with 181 bars, latest close 1.09592
+2025-06-13 15:43:10,633 - __main__ - INFO - SignalRouter initialized for EURUSD at base price 1.0959229034827915 with current ATR 0.0008069041865650328
+2025-06-13 15:43:10,638 - __main__ - INFO - SignalRouter Evaluation for EURUSD: Vol:NORMAL, Trend:UP(ADX:30), Range:True, NearSH:None, NearSL:None
+2025-06-13 15:43:10,638 - __main__ - INFO - Trending Scenario: Selected=RangeGridModel, Reason=Ranging (BB Width narrow). Vol:NORMAL, Trend:UP(ADX:30), Range:True, NearSH:None, NearSL:None
+2025-06-13 15:43:10,640 - __main__ - INFO - SignalRouter initialized for EURUSD at base price 1.0959229034827915 with current ATR 0.0006318672458345674
+2025-06-13 15:43:10,643 - __main__ - INFO - SignalRouter Evaluation for EURUSD: Vol:NORMAL, Trend:NONE(ADX:15), Range:True, NearSH:None, NearSL:None
+2025-06-13 15:43:10,643 - __main__ - INFO - Ranging Scenario: Selected=RangeGridModel, Reason=Ranging (BB Width narrow). Vol:NORMAL, Trend:NONE(ADX:15), Range:True, NearSH:None, NearSL:None
+2025-06-13 15:43:10,644 - __main__ - INFO - SignalRouter initialized for EURUSD at base price 1.0959229034827915 with current ATR 0.0006318672458345674
+2025-06-13 15:43:10,647 - __main__ - INFO - SignalRouter Evaluation for EURUSD: Vol:NORMAL, Trend:NONE(ADX:15), Range:True, NearSH:None, NearSL:1.0956859532656036
+2025-06-13 15:43:10,647 - __main__ - INFO - Near Structure Scenario: Selected=RangeGridModel, Reason=Ranging (BB Width narrow). Vol:NORMAL, Trend:NONE(ADX:15), Range:True, NearSH:None, NearSL:1.0956859532656036
+2025-06-13 15:43:10,647 - __main__ - INFO - SignalRouter tests complete.

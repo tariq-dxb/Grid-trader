@@ -1,0 +1,74 @@
+2025-06-13 15:59:13,916 - grid_trader_session - INFO - Starting Grid Trader Example Session...
+2025-06-13 15:59:13,916 - grid_trader_main - INFO - Generating sample historical data with 150 bars...
+2025-06-13 15:59:13,926 - grid_trader_main - INFO - Calculating indicators for sample data...
+2025-06-13 15:59:13,946 - grid_trader_main - INFO - Sample historical data generated. Original len: 150, After dropna: 131
+2025-06-13 15:59:13,946 - grid_trader_session - INFO - Base trade parameters for new grid: {'symbol': 'EURUSD', 'direction': 'buy', 'base_price': np.float64(1.1014864110874143), 'base_sl': np.float64(1.10036), 'base_tp': np.float64(1.10374), 'base_size_lots': 0.0, 'atr': np.float64(0.000562395572012836)}
+2025-06-13 15:59:13,952 - grid_trader_session - INFO - Grid 'grid_rangegrid_EURUSD_1749830353' created. Pending orders: 6
+2025-06-13 15:59:13,952 - grid_trader_session - DEBUG -   Order(cdb1bc | EURUSD SELL_LIMIT 0.35 lots @ 1.10165 SL:1.10193 TP:1.10096 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,952 - grid_trader_session - DEBUG -   Order(6c1bea | EURUSD SELL_LIMIT 0.23 lots @ 1.10151 SL:1.10193 TP:1.10096 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,952 - grid_trader_session - DEBUG -   Order(e5fcae | EURUSD SELL_LIMIT 0.17 lots @ 1.10137 SL:1.10193 TP:1.10096 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,952 - grid_trader_session - DEBUG -   Order(b975bd | EURUSD BUY_LIMIT 0.35 lots @ 1.10096 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,952 - grid_trader_session - DEBUG -   Order(71c80d | EURUSD BUY_LIMIT 0.23 lots @ 1.1011 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,952 - grid_trader_session - DEBUG -   Order(4f6962 | EURUSD BUY_LIMIT 0.17 lots @ 1.10124 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,952 - grid_trader_session - INFO - Starting basic market simulation loop (5 steps)...
+2025-06-13 15:59:13,952 - grid_trader_session - INFO -
+--- Market Update 1 --- Symbol: EURUSD, Low: 1.10124, High: 1.1015, Close: 1.10134
+2025-06-13 15:59:13,953 - grid_trader_session - INFO - After update 1: Pending Orders=4, Active=2
+2025-06-13 15:59:13,953 - grid_trader_session - DEBUG - Current Pending:
+2025-06-13 15:59:13,953 - grid_trader_session - DEBUG -   Order(cdb1bc | EURUSD SELL_LIMIT 0.35 lots @ 1.10165 SL:1.10193 TP:1.10096 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,953 - grid_trader_session - DEBUG -   Order(6c1bea | EURUSD SELL_LIMIT 0.23 lots @ 1.10151 SL:1.10193 TP:1.10096 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,953 - grid_trader_session - DEBUG -   Order(b975bd | EURUSD BUY_LIMIT 0.35 lots @ 1.10096 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,953 - grid_trader_session - DEBUG -   Order(71c80d | EURUSD BUY_LIMIT 0.23 lots @ 1.1011 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,953 - grid_trader_session - DEBUG - Current Active:
+2025-06-13 15:59:13,953 - grid_trader_session - DEBUG -   Order(e5fcae | EURUSD SELL_LIMIT 0.17 lots @ 1.10137 SL:1.10193 TP:1.10096 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,953 - grid_trader_session - DEBUG -   Order(4f6962 | EURUSD BUY_LIMIT 0.17 lots @ 1.10124 SL:1.10068 TP:1.10165 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,967 - grid_trader_session - INFO -
+--- Market Update 2 --- Symbol: EURUSD, Low: 1.10142, High: 1.10157, Close: 1.10152
+2025-06-13 15:59:13,967 - grid_trader_session - INFO - After update 2: Pending Orders=3, Active=3
+2025-06-13 15:59:13,967 - grid_trader_session - DEBUG - Current Pending:
+2025-06-13 15:59:13,967 - grid_trader_session - DEBUG -   Order(cdb1bc | EURUSD SELL_LIMIT 0.35 lots @ 1.10165 SL:1.10193 TP:1.10096 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,967 - grid_trader_session - DEBUG -   Order(b975bd | EURUSD BUY_LIMIT 0.35 lots @ 1.10096 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,967 - grid_trader_session - DEBUG -   Order(71c80d | EURUSD BUY_LIMIT 0.23 lots @ 1.1011 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,967 - grid_trader_session - DEBUG - Current Active:
+2025-06-13 15:59:13,967 - grid_trader_session - DEBUG -   Order(e5fcae | EURUSD SELL_LIMIT 0.17 lots @ 1.10137 SL:1.10193 TP:1.10096 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,967 - grid_trader_session - DEBUG -   Order(4f6962 | EURUSD BUY_LIMIT 0.17 lots @ 1.10124 SL:1.10068 TP:1.10165 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,967 - grid_trader_session - DEBUG -   Order(6c1bea | EURUSD SELL_LIMIT 0.23 lots @ 1.10151 SL:1.10193 TP:1.10096 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,980 - grid_trader_session - INFO -
+--- Market Update 3 --- Symbol: EURUSD, Low: 1.102, High: 1.10201, Close: 1.10201
+2025-06-13 15:59:13,982 - grid_trader_session - INFO - After update 3: Pending Orders=5, Active=0
+2025-06-13 15:59:13,982 - grid_trader_session - DEBUG - Current Pending:
+2025-06-13 15:59:13,982 - grid_trader_session - DEBUG -   Order(b975bd | EURUSD BUY_LIMIT 0.35 lots @ 1.10096 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,982 - grid_trader_session - DEBUG -   Order(71c80d | EURUSD BUY_LIMIT 0.23 lots @ 1.1011 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,982 - grid_trader_session - DEBUG -   Order(c49f0c | EURUSD SELL_LIMIT 0.14 lots @ 1.10137 SL:1.10204 TP:1.10088 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1)
+2025-06-13 15:59:13,982 - grid_trader_session - DEBUG -   Order(7aa075 | EURUSD SELL_LIMIT 0.2 lots @ 1.10151 SL:1.10201 TP:1.10085 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1)
+2025-06-13 15:59:13,982 - grid_trader_session - DEBUG -   Order(66ecd6 | EURUSD SELL_LIMIT 0.29 lots @ 1.10165 SL:1.10199 TP:1.10082 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1)
+2025-06-13 15:59:13,994 - grid_trader_session - INFO -
+--- Market Update 4 --- Symbol: EURUSD, Low: 1.1018, High: 1.10186, Close: 1.10183
+2025-06-13 15:59:13,994 - grid_trader_session - INFO - After update 4: Pending Orders=2, Active=3
+2025-06-13 15:59:13,994 - grid_trader_session - DEBUG - Current Pending:
+2025-06-13 15:59:13,994 - grid_trader_session - DEBUG -   Order(b975bd | EURUSD BUY_LIMIT 0.35 lots @ 1.10096 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,994 - grid_trader_session - DEBUG -   Order(71c80d | EURUSD BUY_LIMIT 0.23 lots @ 1.1011 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:13,995 - grid_trader_session - DEBUG - Current Active:
+2025-06-13 15:59:13,995 - grid_trader_session - DEBUG -   Order(c49f0c | EURUSD SELL_LIMIT 0.14 lots @ 1.10137 SL:1.10204 TP:1.10088 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1)
+2025-06-13 15:59:13,995 - grid_trader_session - DEBUG -   Order(7aa075 | EURUSD SELL_LIMIT 0.2 lots @ 1.10151 SL:1.10201 TP:1.10085 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1)
+2025-06-13 15:59:13,995 - grid_trader_session - DEBUG -   Order(66ecd6 | EURUSD SELL_LIMIT 0.29 lots @ 1.10165 SL:1.10199 TP:1.10082 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1)
+2025-06-13 15:59:14,007 - grid_trader_session - INFO -
+--- Market Update 5 --- Symbol: EURUSD, Low: 1.1017, High: 1.10196, Close: 1.10186
+2025-06-13 15:59:14,007 - grid_trader_session - INFO - After update 5: Pending Orders=2, Active=3
+2025-06-13 15:59:14,007 - grid_trader_session - DEBUG - Current Pending:
+2025-06-13 15:59:14,007 - grid_trader_session - DEBUG -   Order(b975bd | EURUSD BUY_LIMIT 0.35 lots @ 1.10096 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:14,007 - grid_trader_session - DEBUG -   Order(71c80d | EURUSD BUY_LIMIT 0.23 lots @ 1.1011 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:14,007 - grid_trader_session - DEBUG - Current Active:
+2025-06-13 15:59:14,007 - grid_trader_session - DEBUG -   Order(c49f0c | EURUSD SELL_LIMIT 0.14 lots @ 1.10137 SL:1.10204 TP:1.10088 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1)
+2025-06-13 15:59:14,008 - grid_trader_session - DEBUG -   Order(7aa075 | EURUSD SELL_LIMIT 0.2 lots @ 1.10151 SL:1.10201 TP:1.10085 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1)
+2025-06-13 15:59:14,008 - grid_trader_session - DEBUG -   Order(66ecd6 | EURUSD SELL_LIMIT 0.29 lots @ 1.10165 SL:1.10199 TP:1.10082 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1)
+2025-06-13 15:59:14,020 - grid_trader_session - INFO - Example session finished. Final Orders State:
+2025-06-13 15:59:14,020 - grid_trader_session - INFO -   Order(cdb1bc | EURUSD SELL_LIMIT 0.35 lots @ 1.10165 SL:1.10193 TP:1.10096 | Status: STOPPED_OUT | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:14,020 - grid_trader_session - INFO -   Order(6c1bea | EURUSD SELL_LIMIT 0.23 lots @ 1.10151 SL:1.10193 TP:1.10096 | Status: STOPPED_OUT | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:14,020 - grid_trader_session - INFO -   Order(e5fcae | EURUSD SELL_LIMIT 0.17 lots @ 1.10137 SL:1.10193 TP:1.10096 | Status: STOPPED_OUT | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:14,020 - grid_trader_session - INFO -   Order(b975bd | EURUSD BUY_LIMIT 0.35 lots @ 1.10096 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:14,020 - grid_trader_session - INFO -   Order(71c80d | EURUSD BUY_LIMIT 0.23 lots @ 1.1011 SL:1.10068 TP:1.10165 | Status: PENDING | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:14,020 - grid_trader_session - INFO -   Order(4f6962 | EURUSD BUY_LIMIT 0.17 lots @ 1.10124 SL:1.10068 TP:1.10165 | Status: TP_HIT | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 0)
+2025-06-13 15:59:14,020 - grid_trader_session - INFO -   Order(c49f0c | EURUSD SELL_LIMIT 0.14 lots @ 1.10137 SL:1.10204 TP:1.10088 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1)
+2025-06-13 15:59:14,020 - grid_trader_session - INFO -   Order(7aa075 | EURUSD SELL_LIMIT 0.2 lots @ 1.10151 SL:1.10201 TP:1.10085 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1)
+2025-06-13 15:59:14,020 - grid_trader_session - INFO -   Order(66ecd6 | EURUSD SELL_LIMIT 0.29 lots @ 1.10165 SL:1.10199 TP:1.10082 | Status: FILLED | GridID: grid_rangegrid_EURUSD_1749830353 | Regen: 1)

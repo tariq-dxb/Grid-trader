@@ -1,0 +1,43 @@
+2025-06-13 14:34:02,434 - __main__ - INFO - --- Testing StaticGridModel EURUSD (BUY direction) ---
+2025-06-13 14:34:02,434 - __main__ - INFO - StaticGridModel initialized for EURUSD buy: NumLines=4, BasePrice=1.105, BaseSL=1.1, BaseTP=1.115, UseBaseTP=False, IndivTP_RR=1.5
+2025-06-13 14:34:02,434 - __main__ - DEBUG - MockRM SG: Lots for EURUSD E:1.104 SL:1.1 Risk:10.0 -> 0.01 lots (SL pips: 400.00000000000034)
+2025-06-13 14:34:02,434 - __main__ - DEBUG - MockRM SG: Lots for EURUSD E:1.103 SL:1.1 Risk:10.0 -> 0.01 lots (SL pips: 299.99999999998914)
+2025-06-13 14:34:02,434 - __main__ - DEBUG - MockRM SG: Lots for EURUSD E:1.102 SL:1.1 Risk:10.0 -> 0.01 lots (SL pips: 200.00000000000017)
+2025-06-13 14:34:02,434 - __main__ - DEBUG - MockRM SG: Lots for EURUSD E:1.101 SL:1.1 Risk:10.0 -> 0.01 lots (SL pips: 99.99999999998897)
+2025-06-13 14:34:02,434 - __main__ - INFO - Generated 4 orders for StaticGridModel (EURUSD).
+2025-06-13 14:34:02,434 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_LIMIT', 'entry_price': 1.104, 'sl': 1.1, 'tp': 1.11, 'lot_size': 0.01, 'grid_id': 'SG_EURUSD_BT_1'}
+2025-06-13 14:34:02,434 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_LIMIT', 'entry_price': 1.103, 'sl': 1.1, 'tp': 1.107, 'lot_size': 0.01, 'grid_id': 'SG_EURUSD_BT_2'}
+2025-06-13 14:34:02,434 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_LIMIT', 'entry_price': 1.102, 'sl': 1.1, 'tp': 1.105, 'lot_size': 0.01, 'grid_id': 'SG_EURUSD_BT_3'}
+2025-06-13 14:34:02,434 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_LIMIT', 'entry_price': 1.101, 'sl': 1.1, 'tp': 1.102, 'lot_size': 0.01, 'grid_id': 'SG_EURUSD_BT_4'}
+2025-06-13 14:34:02,435 - __main__ - INFO - --- Testing StaticGridModel EURUSD (BUY direction, use_base_tp_for_all=True) ---
+2025-06-13 14:34:02,435 - __main__ - INFO - StaticGridModel initialized for EURUSD buy: NumLines=3, BasePrice=1.105, BaseSL=1.1, BaseTP=1.115, UseBaseTP=True, IndivTP_RR=N/A
+2025-06-13 14:34:02,435 - __main__ - DEBUG - MockRM SG: Lots for EURUSD E:1.104 SL:1.1 Risk:10.0 -> 0.01 lots (SL pips: 400.00000000000034)
+2025-06-13 14:34:02,435 - __main__ - DEBUG - MockRM SG: Lots for EURUSD E:1.103 SL:1.1 Risk:10.0 -> 0.01 lots (SL pips: 299.99999999998914)
+2025-06-13 14:34:02,435 - __main__ - DEBUG - MockRM SG: Lots for EURUSD E:1.101 SL:1.1 Risk:10.0 -> 0.01 lots (SL pips: 99.99999999998897)
+2025-06-13 14:34:02,435 - __main__ - INFO - Generated 3 orders for StaticGridModel (EURUSD).
+2025-06-13 14:34:02,435 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_LIMIT', 'entry_price': 1.104, 'sl': 1.1, 'tp': 1.115, 'lot_size': 0.01, 'grid_id': 'SG_EURUSD_BT_1'}
+2025-06-13 14:34:02,435 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_LIMIT', 'entry_price': 1.103, 'sl': 1.1, 'tp': 1.115, 'lot_size': 0.01, 'grid_id': 'SG_EURUSD_BT_2'}
+2025-06-13 14:34:02,435 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_LIMIT', 'entry_price': 1.101, 'sl': 1.1, 'tp': 1.115, 'lot_size': 0.01, 'grid_id': 'SG_EURUSD_BT_3'}
+2025-06-13 14:34:02,435 - __main__ - INFO - --- Testing StaticGridModel XAUUSD (SELL direction) ---
+2025-06-13 14:34:02,435 - __main__ - INFO - StaticGridModel initialized for XAUUSD sell: NumLines=5, BasePrice=1950.0, BaseSL=1960.0, BaseTP=1930.0, UseBaseTP=False, IndivTP_RR=1.0
+2025-06-13 14:34:02,435 - __main__ - DEBUG - MockRM SG: Lots for XAUUSD E:1951.7 SL:1960.0 Risk:10.0 -> 0.01 lots (SL pips: 829.9999999999955)
+2025-06-13 14:34:02,435 - __main__ - DEBUG - MockRM SG: Lots for XAUUSD E:1953.3 SL:1960.0 Risk:10.0 -> 0.01 lots (SL pips: 670.0000000000045)
+2025-06-13 14:34:02,435 - __main__ - DEBUG - MockRM SG: Lots for XAUUSD E:1955.0 SL:1960.0 Risk:10.0 -> 0.02 lots (SL pips: 500.0)
+2025-06-13 14:34:02,435 - __main__ - DEBUG - MockRM SG: Lots for XAUUSD E:1956.7 SL:1960.0 Risk:10.0 -> 0.03 lots (SL pips: 329.99999999999545)
+2025-06-13 14:34:02,436 - __main__ - DEBUG - MockRM SG: Lots for XAUUSD E:1958.3 SL:1960.0 Risk:10.0 -> 0.06 lots (SL pips: 170.00000000000455)
+2025-06-13 14:34:02,436 - __main__ - INFO - Generated 5 orders for StaticGridModel (XAUUSD).
+2025-06-13 14:34:02,436 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'SELL_LIMIT', 'entry_price': 1951.7, 'sl': 1960.0, 'tp': 1943.4, 'lot_size': 0.01, 'grid_id': 'SG_XAUUSD_ST_1'}
+2025-06-13 14:34:02,436 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'SELL_LIMIT', 'entry_price': 1953.3, 'sl': 1960.0, 'tp': 1946.6, 'lot_size': 0.01, 'grid_id': 'SG_XAUUSD_ST_2'}
+2025-06-13 14:34:02,436 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'SELL_LIMIT', 'entry_price': 1955.0, 'sl': 1960.0, 'tp': 1950.0, 'lot_size': 0.02, 'grid_id': 'SG_XAUUSD_ST_3'}
+2025-06-13 14:34:02,436 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'SELL_LIMIT', 'entry_price': 1956.7, 'sl': 1960.0, 'tp': 1953.4, 'lot_size': 0.03, 'grid_id': 'SG_XAUUSD_ST_4'}
+2025-06-13 14:34:02,436 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'SELL_LIMIT', 'entry_price': 1958.3, 'sl': 1960.0, 'tp': 1956.6, 'lot_size': 0.06, 'grid_id': 'SG_XAUUSD_ST_5'}
+2025-06-13 14:34:02,436 - __main__ - INFO - --- Testing StaticGridModel Invalid Config (Price <= SL for BUY) ---
+2025-06-13 14:34:02,436 - __main__ - ERROR - StaticGrid: Base price (1.099) is not appropriately positioned relative to Base SL (1.1) for direction 'buy'.
+2025-06-13 14:34:02,436 - __main__ - ERROR - Caught expected error for invalid buy setup: StaticGrid: Base price (1.099) is not appropriately positioned relative to Base SL (1.1) for direction 'buy'.
+2025-06-13 14:34:02,436 - __main__ - INFO - --- Testing StaticGridModel Invalid Config (Price >= SL for SELL) ---
+2025-06-13 14:34:02,436 - __main__ - ERROR - StaticGrid: Base price (1961.0) is not appropriately positioned relative to Base SL (1960.0) for direction 'sell'.
+2025-06-13 14:34:02,436 - __main__ - ERROR - Caught expected error for invalid sell setup: StaticGrid: Base price (1961.0) is not appropriately positioned relative to Base SL (1960.0) for direction 'sell'.
+2025-06-13 14:34:02,436 - __main__ - INFO - --- Testing StaticGridModel with spacing too small ---
+2025-06-13 14:34:02,436 - __main__ - INFO - StaticGridModel initialized for EURUSD buy: NumLines=2, BasePrice=1.10001, BaseSL=1.1, BaseTP=1.10005, UseBaseTP=True, IndivTP_RR=N/A
+2025-06-13 14:34:02,436 - __main__ - WARNING - StaticGrid: Calculated spacing (0.0000033) is too small for EURUSD with 5 decimals. Min practical spacing: 0.00001. No orders generated.
+2025-06-13 14:34:02,436 - __main__ - INFO - Orders with too small spacing: 0

@@ -1,0 +1,39 @@
+2025-06-13 14:35:58,556 - __main__ - INFO - --- Testing PyramidGridModel EURUSD (BUY) ---
+2025-06-13 14:35:58,557 - __main__ - INFO - Test 1: SL at previous level
+2025-06-13 14:35:58,557 - __main__ - INFO - PyramidGridModel initialized for EURUSD buy: Levels=3, SpacingATR_x1.0, SLPrevLvl=True, SL_ATR_x1.0, TP_ATR_x3.0
+2025-06-13 14:35:58,557 - __main__ - DEBUG - MockRM PG: Lots for EURUSD E:1.102 SL:1.1015 Risk:10.0 -> 0.02 lots (SL pips: 50.00)
+2025-06-13 14:35:58,558 - __main__ - DEBUG - MockRM PG: Lots for EURUSD E:1.1025 SL:1.102 Risk:10.0 -> 0.02 lots (SL pips: 50.00)
+2025-06-13 14:35:58,558 - __main__ - DEBUG - MockRM PG: Lots for EURUSD E:1.103 SL:1.1025 Risk:10.0 -> 0.02 lots (SL pips: 50.00)
+2025-06-13 14:35:58,558 - __main__ - INFO - Generated 3 orders for PyramidGridModel (EURUSD).
+2025-06-13 14:35:58,558 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.102, 'sl': 1.1015, 'tp': 1.1035, 'lot_size': 0.02, 'grid_id': 'PG_EURUSD_BP_1'}
+2025-06-13 14:35:58,558 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.1025, 'sl': 1.102, 'tp': 1.104, 'lot_size': 0.02, 'grid_id': 'PG_EURUSD_BP_2'}
+2025-06-13 14:35:58,558 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.103, 'sl': 1.1025, 'tp': 1.1045, 'lot_size': 0.02, 'grid_id': 'PG_EURUSD_BP_3'}
+2025-06-13 14:35:58,558 - __main__ - INFO -
+Test 2: SL by ATR multiplier
+2025-06-13 14:35:58,558 - __main__ - INFO - PyramidGridModel initialized for EURUSD buy: Levels=3, SpacingATR_x1.0, SLPrevLvl=False, SL_ATR_x1.5, TP_ATR_x3.0
+2025-06-13 14:35:58,558 - __main__ - DEBUG - MockRM PG: Lots for EURUSD E:1.102 SL:1.1013 Risk:10.0 -> 0.01 lots (SL pips: 70.00)
+2025-06-13 14:35:58,558 - __main__ - DEBUG - MockRM PG: Lots for EURUSD E:1.1025 SL:1.1018 Risk:10.0 -> 0.01 lots (SL pips: 70.00)
+2025-06-13 14:35:58,558 - __main__ - DEBUG - MockRM PG: Lots for EURUSD E:1.103 SL:1.1022 Risk:10.0 -> 0.01 lots (SL pips: 80.00)
+2025-06-13 14:35:58,558 - __main__ - INFO - Generated 3 orders for PyramidGridModel (EURUSD).
+2025-06-13 14:35:58,558 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.102, 'sl': 1.1013, 'tp': 1.1035, 'lot_size': 0.01, 'grid_id': 'PG_EURUSD_BP_1'}
+2025-06-13 14:35:58,558 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.1025, 'sl': 1.1018, 'tp': 1.104, 'lot_size': 0.01, 'grid_id': 'PG_EURUSD_BP_2'}
+2025-06-13 14:35:58,558 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.103, 'sl': 1.1022, 'tp': 1.1045, 'lot_size': 0.01, 'grid_id': 'PG_EURUSD_BP_3'}
+2025-06-13 14:35:58,558 - __main__ - INFO - --- Testing PyramidGridModel USDJPY (SELL) ---
+2025-06-13 14:35:58,558 - __main__ - INFO - Test 3: SL at previous level (SELL)
+2025-06-13 14:35:58,558 - __main__ - INFO - PyramidGridModel initialized for USDJPY sell: Levels=4, SpacingATR_x0.8, SLPrevLvl=True, SL_ATR_x1.0, TP_ATR_x2.5
+2025-06-13 14:35:58,558 - __main__ - DEBUG - MockRM PG: Lots for USDJPY E:130.4 SL:130.5 Risk:10.0 -> 0.11 lots (SL pips: 100.00)
+2025-06-13 14:35:58,559 - __main__ - DEBUG - MockRM PG: Lots for USDJPY E:130.3 SL:130.4 Risk:10.0 -> 0.11 lots (SL pips: 100.00)
+2025-06-13 14:35:58,559 - __main__ - DEBUG - MockRM PG: Lots for USDJPY E:130.2 SL:130.3 Risk:10.0 -> 0.11 lots (SL pips: 100.00)
+2025-06-13 14:35:58,559 - __main__ - DEBUG - MockRM PG: Lots for USDJPY E:130.1 SL:130.2 Risk:10.0 -> 0.11 lots (SL pips: 100.00)
+2025-06-13 14:35:58,559 - __main__ - INFO - Generated 4 orders for PyramidGridModel (USDJPY).
+2025-06-13 14:35:58,559 - __main__ - INFO -   {'symbol': 'USDJPY', 'order_type': 'SELL_STOP', 'entry_price': 130.4, 'sl': 130.5, 'tp': 130.0, 'lot_size': 0.11, 'grid_id': 'PG_USDJPY_SP_1'}
+2025-06-13 14:35:58,559 - __main__ - INFO -   {'symbol': 'USDJPY', 'order_type': 'SELL_STOP', 'entry_price': 130.3, 'sl': 130.4, 'tp': 129.9, 'lot_size': 0.11, 'grid_id': 'PG_USDJPY_SP_2'}
+2025-06-13 14:35:58,559 - __main__ - INFO -   {'symbol': 'USDJPY', 'order_type': 'SELL_STOP', 'entry_price': 130.2, 'sl': 130.3, 'tp': 129.8, 'lot_size': 0.11, 'grid_id': 'PG_USDJPY_SP_3'}
+2025-06-13 14:35:58,559 - __main__ - INFO -   {'symbol': 'USDJPY', 'order_type': 'SELL_STOP', 'entry_price': 130.1, 'sl': 130.2, 'tp': 129.7, 'lot_size': 0.11, 'grid_id': 'PG_USDJPY_SP_4'}
+2025-06-13 14:35:58,559 - __main__ - INFO -
+Test 4: Small ATR leading to small spacing / SL distance
+2025-06-13 14:35:58,559 - __main__ - INFO - PyramidGridModel initialized for EURUSD buy: Levels=2, SpacingATR_x1.0, SLPrevLvl=True, SL_ATR_x1.0, TP_ATR_x3.0
+2025-06-13 14:35:58,559 - __main__ - WARNING - PyramidGrid: Calculated spacing (0.000020) is too small for EURUSD. No orders generated.
+2025-06-13 14:35:58,559 - __main__ - INFO -
+Test 5: Zero ATR
+2025-06-13 14:35:58,559 - __main__ - INFO - Caught expected error for Zero ATR during init: Missing critical base_trade_params: symbol, direction, base_price, base_sl, or atr.

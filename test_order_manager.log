@@ -1,0 +1,58 @@
+2025-06-13 15:36:17,971 - __main__ - INFO - OrderManager initialized. Max Regen Attempts: 3, Cooldown: 300s
+2025-06-13 15:36:17,972 - __main__ - INFO - --- Testing Order Placement ---
+2025-06-13 15:36:17,972 - __main__ - INFO - Order Placed (Simulated): Order(668676 | EURUSD BUY_STOP 0.01 lots @ 1.1 SL:1.095 TP:1.11 | Status: PENDING | GridID: TestGrid1 | Regen: 0)
+2025-06-13 15:36:17,972 - __main__ - INFO - Order Placed (Simulated): Order(82184c | USDJPY SELL_LIMIT 0.02 lots @ 130.0 SL:130.5 TP:129.0 | Status: PENDING | GridID: None | Regen: 0)
+2025-06-13 15:36:17,972 - __main__ - INFO - --- Testing Order Cancellation ---
+2025-06-13 15:36:17,972 - __main__ - INFO - Order Cancelled (Simulated): Order(668676 | EURUSD BUY_STOP 0.01 lots @ 1.1 SL:1.095 TP:1.11 | Status: CANCELLED | GridID: TestGrid1 | Regen: 0)
+2025-06-13 15:36:17,972 - __main__ - INFO - --- Testing Order Fill (Simulated) ---
+2025-06-13 15:36:17,972 - __main__ - INFO - Order Filled (Simulated): Order(82184c | USDJPY SELL_LIMIT 0.02 lots @ 130.0 SL:130.5 TP:129.0 | Status: FILLED | GridID: None | Regen: 0) at 130.0
+2025-06-13 15:36:17,972 - __main__ - INFO - --- Testing SL/TP Hit (Simulated) ---
+2025-06-13 15:36:17,972 - __main__ - INFO - Position Closed (Simulated): Order(82184c | USDJPY SELL_LIMIT 0.02 lots @ 130.0 SL:130.5 TP:129.0 | Status: TP_HIT | GridID: None | Regen: 0) by TP_HIT at 129.0
+2025-06-13 15:36:17,973 - __main__ - INFO - --- Testing Regeneration Logic ---
+2025-06-13 15:36:17,973 - __main__ - INFO - Order Placed (Simulated): Order(fc15e1 | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.085 TP:1.1 | Status: PENDING | GridID: RegenGrid | Regen: 0)
+2025-06-13 15:36:17,973 - __main__ - INFO - Order Filled (Simulated): Order(fc15e1 | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.085 TP:1.1 | Status: FILLED | GridID: RegenGrid | Regen: 0) at 1.09
+2025-06-13 15:36:17,973 - __main__ - INFO - Position Closed (Simulated): Order(fc15e1 | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.085 TP:1.1 | Status: STOPPED_OUT | GridID: RegenGrid | Regen: 0) by STOPPED_OUT at 1.085
+2025-06-13 15:36:17,973 - __main__ - INFO - Order o3 (fc15e1) needs regen: True (Attempts for slot fc15e1: 0)
+2025-06-13 15:36:17,973 - __main__ - INFO - Widening SL/TP for regen of 5fce9343-576a-42af-9241-cc624efc15e1. Factor: 1.2. SL: 1.085->1.08, TP: 1.1->1.1
+2025-06-13 15:36:17,973 - __main__ - INFO - Regeneration params for o3: SL 1.08, TP 1.1
+2025-06-13 15:36:17,973 - __main__ - INFO - Order Placed (Simulated): Order(74a56e | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.08 TP:1.1 | Status: PENDING | GridID: RegenGrid | Regen: 1)
+2025-06-13 15:36:17,973 - __main__ - INFO - Regenerated order 1: Order(74a56e | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.08 TP:1.1 | Status: PENDING | GridID: RegenGrid | Regen: 1)
+2025-06-13 15:36:17,973 - __main__ - INFO - Order Filled (Simulated): Order(74a56e | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.08 TP:1.1 | Status: FILLED | GridID: RegenGrid | Regen: 1) at 1.09
+2025-06-13 15:36:17,973 - __main__ - INFO - Position Closed (Simulated): Order(74a56e | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.08 TP:1.1 | Status: STOPPED_OUT | GridID: RegenGrid | Regen: 1) by STOPPED_OUT at 1.08
+2025-06-13 15:36:17,973 - __main__ - INFO - Order o3_regen1 (74a56e) needs regen: True (Attempts for slot fc15e1: 1)
+2025-06-13 15:36:17,973 - __main__ - INFO - Widening SL/TP for regen of 5fce9343-576a-42af-9241-cc624efc15e1. Factor: 1.5. SL: 1.08->1.08, TP: 1.1->1.1
+2025-06-13 15:36:17,973 - __main__ - INFO - Order Placed (Simulated): Order(992da8 | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.08 TP:1.1 | Status: PENDING | GridID: RegenGrid | Regen: 2)
+2025-06-13 15:36:17,973 - __main__ - INFO - Regenerated order 2: Order(992da8 | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.08 TP:1.1 | Status: PENDING | GridID: RegenGrid | Regen: 2)
+2025-06-13 15:36:17,973 - __main__ - INFO - Order Filled (Simulated): Order(992da8 | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.08 TP:1.1 | Status: FILLED | GridID: RegenGrid | Regen: 2) at 1.09
+2025-06-13 15:36:17,973 - __main__ - INFO - Position Closed (Simulated): Order(992da8 | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.08 TP:1.1 | Status: STOPPED_OUT | GridID: RegenGrid | Regen: 2) by STOPPED_OUT at 1.08
+2025-06-13 15:36:17,975 - __main__ - INFO - Order o3_regen2 (992da8) needs regen: True (Attempts for slot fc15e1: 2)
+2025-06-13 15:37:25,518 - __main__ - INFO - OrderManager initialized. Max Regen Attempts: 2, Cooldown: 60s
+2025-06-13 15:37:25,518 - __main__ - INFO - --- Testing Order Placement ---
+2025-06-13 15:37:25,519 - __main__ - INFO - Order Placed (Simulated): Order(a56135 | EURUSD BUY_STOP 0.01 lots @ 1.1 SL:1.095 TP:1.11 | Status: PENDING | GridID: TestGrid1 | Regen: 0)
+2025-06-13 15:37:25,519 - __main__ - INFO - Order Placed (Simulated): Order(faca93 | USDJPY SELL_LIMIT 0.02 lots @ 130.0 SL:130.5 TP:129.0 | Status: PENDING | GridID: None | Regen: 0)
+2025-06-13 15:37:25,519 - __main__ - INFO - --- Testing Order Cancellation ---
+2025-06-13 15:37:25,519 - __main__ - INFO - Order Cancelled (Simulated): Order(a56135 | EURUSD BUY_STOP 0.01 lots @ 1.1 SL:1.095 TP:1.11 | Status: CANCELLED | GridID: TestGrid1 | Regen: 0)
+2025-06-13 15:37:25,519 - __main__ - INFO - --- Testing Order Fill (Simulated) ---
+2025-06-13 15:37:25,519 - __main__ - INFO - Order Filled (Simulated): Order(faca93 | USDJPY SELL_LIMIT 0.02 lots @ 130.0 SL:130.5 TP:129.0 | Status: FILLED | GridID: None | Regen: 0) at 130.0
+2025-06-13 15:37:25,519 - __main__ - INFO - --- Testing SL/TP Hit (Simulated) ---
+2025-06-13 15:37:25,519 - __main__ - INFO - Position Closed (Simulated): Order(faca93 | USDJPY SELL_LIMIT 0.02 lots @ 130.0 SL:130.5 TP:129.0 | Status: TP_HIT | GridID: None | Regen: 0) by TP_HIT at 129.0
+2025-06-13 15:37:25,519 - __main__ - INFO - --- Testing Regeneration Logic ---
+2025-06-13 15:37:25,519 - __main__ - INFO - Order Placed (Simulated): Order(92fd6d | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.085 TP:1.1 | Status: PENDING | GridID: RegenGrid | Regen: 0)
+2025-06-13 15:37:25,519 - __main__ - INFO - Order Filled (Simulated): Order(92fd6d | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.085 TP:1.1 | Status: FILLED | GridID: RegenGrid | Regen: 0) at 1.09
+2025-06-13 15:37:25,519 - __main__ - INFO - Position Closed (Simulated): Order(92fd6d | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.085 TP:1.1 | Status: STOPPED_OUT | GridID: RegenGrid | Regen: 0) by STOPPED_OUT at 1.085
+2025-06-13 15:37:25,519 - __main__ - INFO - Order o3 (92fd6d) needs regen: True (Attempts for slot 92fd6d: 0)
+2025-06-13 15:37:25,519 - __main__ - INFO - Widening SL/TP for regen of ef8500cd-af1a-4986-bd05-5a0b1892fd6d. Factor: 1.2. SL: 1.085->1.08, TP: 1.1->1.1
+2025-06-13 15:37:25,519 - __main__ - INFO - Regeneration params for o3: SL 1.08, TP 1.1
+2025-06-13 15:37:25,519 - __main__ - INFO - Order Placed (Simulated): Order(d7a98b | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.08 TP:1.1 | Status: PENDING | GridID: RegenGrid | Regen: 1)
+2025-06-13 15:37:25,519 - __main__ - INFO - Regenerated order 1: Order(d7a98b | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.08 TP:1.1 | Status: PENDING | GridID: RegenGrid | Regen: 1)
+2025-06-13 15:37:25,520 - __main__ - INFO - Order Filled (Simulated): Order(d7a98b | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.08 TP:1.1 | Status: FILLED | GridID: RegenGrid | Regen: 1) at 1.09
+2025-06-13 15:37:25,520 - __main__ - INFO - Position Closed (Simulated): Order(d7a98b | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.08 TP:1.1 | Status: STOPPED_OUT | GridID: RegenGrid | Regen: 1) by STOPPED_OUT at 1.08
+2025-06-13 15:37:25,520 - __main__ - INFO - Order o3_regen1 (d7a98b) needs regen: True (Attempts for slot 92fd6d: 1)
+2025-06-13 15:37:25,520 - __main__ - INFO - Widening SL/TP for regen of ef8500cd-af1a-4986-bd05-5a0b1892fd6d. Factor: 1.5. SL: 1.08->1.08, TP: 1.1->1.1
+2025-06-13 15:37:25,520 - __main__ - INFO - Order Placed (Simulated): Order(dc56c0 | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.08 TP:1.1 | Status: PENDING | GridID: RegenGrid | Regen: 2)
+2025-06-13 15:37:25,520 - __main__ - INFO - Regenerated order 2: Order(dc56c0 | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.08 TP:1.1 | Status: PENDING | GridID: RegenGrid | Regen: 2)
+2025-06-13 15:37:25,520 - __main__ - INFO - Order Filled (Simulated): Order(dc56c0 | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.08 TP:1.1 | Status: FILLED | GridID: RegenGrid | Regen: 2) at 1.09
+2025-06-13 15:37:25,520 - __main__ - INFO - Position Closed (Simulated): Order(dc56c0 | EURUSD BUY_LIMIT 0.03 lots @ 1.09 SL:1.08 TP:1.1 | Status: STOPPED_OUT | GridID: RegenGrid | Regen: 2) by STOPPED_OUT at 1.08
+2025-06-13 15:37:25,521 - __main__ - INFO - Order slot ef8500cd-af1a-4986-bd05-5a0b1892fd6d (last attempt 653c58a2-251e-4c18-8d0e-1c0d53dc56c0) reached max regen attempts (2).
+2025-06-13 15:37:25,521 - __main__ - INFO - Order o3_regen2 (dc56c0) needs regen: False (Attempts for slot 92fd6d: 2)
+2025-06-13 15:37:25,521 - __main__ - INFO - Order Manager Tests Complete.
