@@ -1,0 +1,49 @@
+2025-06-13 14:24:12,849 - __main__ - INFO - --- Testing DualGridModel EURUSD (BUY direction context) ---
+2025-06-13 14:24:12,850 - __main__ - INFO - DualGridModel initialized for EURUSD: Breakout Levels=2 (ATR x1.0), Reversal Levels=2 (ATR x0.5), SL ATR x0.75, TP ATR x1.5
+2025-06-13 14:24:12,850 - __main__ - DEBUG - MockRM DG: Lots for EURUSD E:1.1025 SL:1.1018 Risk:10.0 -> 0.01 lots (SL pips: 70.0000000000145)
+2025-06-13 14:24:12,850 - __main__ - DEBUG - MockRM DG: Lots for EURUSD E:1.1005 SL:1.1013 Risk:10.0 -> 0.01 lots (SL pips: 79.99999999999119)
+2025-06-13 14:24:12,850 - __main__ - DEBUG - MockRM DG: Lots for EURUSD E:1.1035 SL:1.1027 Risk:10.0 -> 0.01 lots (SL pips: 79.99999999999119)
+2025-06-13 14:24:12,850 - __main__ - DEBUG - MockRM DG: Lots for EURUSD E:1.0995 SL:1.1002 Risk:10.0 -> 0.01 lots (SL pips: 70.0000000000145)
+2025-06-13 14:24:12,850 - __main__ - DEBUG - MockRM DG: Lots for EURUSD E:1.102 SL:1.1028 Risk:10.0 -> 0.01 lots (SL pips: 79.99999999999119)
+2025-06-13 14:24:12,850 - __main__ - DEBUG - MockRM DG: Lots for EURUSD E:1.101 SL:1.1002 Risk:10.0 -> 0.01 lots (SL pips: 79.99999999999119)
+2025-06-13 14:24:12,850 - __main__ - DEBUG - MockRM DG: Lots for EURUSD E:1.1025 SL:1.1033 Risk:10.0 -> 0.01 lots (SL pips: 79.99999999999119)
+2025-06-13 14:24:12,850 - __main__ - DEBUG - MockRM DG: Lots for EURUSD E:1.1005 SL:1.0998 Risk:10.0 -> 0.01 lots (SL pips: 69.99999999999228)
+2025-06-13 14:24:12,850 - __main__ - INFO - Generated 8 orders for DualGridModel (EURUSD).
+2025-06-13 14:24:12,850 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.1025, 'sl': 1.1018, 'tp': 1.104, 'lot_size': 0.01, 'grid_id': 'DG_EURUSD_BS_1'}
+2025-06-13 14:24:12,850 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_STOP', 'entry_price': 1.1005, 'sl': 1.1013, 'tp': 1.099, 'lot_size': 0.01, 'grid_id': 'DG_EURUSD_SS_1'}
+2025-06-13 14:24:12,850 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.1035, 'sl': 1.1027, 'tp': 1.105, 'lot_size': 0.01, 'grid_id': 'DG_EURUSD_BS_2'}
+2025-06-13 14:24:12,851 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_STOP', 'entry_price': 1.0995, 'sl': 1.1002, 'tp': 1.098, 'lot_size': 0.01, 'grid_id': 'DG_EURUSD_SS_2'}
+2025-06-13 14:24:12,851 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_LIMIT', 'entry_price': 1.102, 'sl': 1.1028, 'tp': 1.1005, 'lot_size': 0.01, 'grid_id': 'DG_EURUSD_SLIM_1'}
+2025-06-13 14:24:12,851 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_LIMIT', 'entry_price': 1.101, 'sl': 1.1002, 'tp': 1.1025, 'lot_size': 0.01, 'grid_id': 'DG_EURUSD_BLIM_1'}
+2025-06-13 14:24:12,851 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_LIMIT', 'entry_price': 1.1025, 'sl': 1.1033, 'tp': 1.101, 'lot_size': 0.01, 'grid_id': 'DG_EURUSD_SLIM_2'}
+2025-06-13 14:24:12,851 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_LIMIT', 'entry_price': 1.1005, 'sl': 1.0998, 'tp': 1.102, 'lot_size': 0.01, 'grid_id': 'DG_EURUSD_BLIM_2'}
+2025-06-13 14:24:12,851 - __main__ - INFO - --- Testing DualGridModel XAUUSD (SELL direction context, only reversal) ---
+2025-06-13 14:24:12,851 - __main__ - INFO - DualGridModel initialized for XAUUSD: Breakout Levels=0 (ATR x1.0), Reversal Levels=3 (ATR x0.6), SL ATR x0.8, TP ATR x2.0
+2025-06-13 14:24:12,851 - __main__ - DEBUG - MockRM DG: Lots for XAUUSD E:1956.0 SL:1964.0 Risk:10.0 -> 0.01 lots (SL pips: 800.0)
+2025-06-13 14:24:12,851 - __main__ - DEBUG - MockRM DG: Lots for XAUUSD E:1944.0 SL:1936.0 Risk:10.0 -> 0.01 lots (SL pips: 800.0)
+2025-06-13 14:24:12,851 - __main__ - DEBUG - MockRM DG: Lots for XAUUSD E:1962.0 SL:1970.0 Risk:10.0 -> 0.01 lots (SL pips: 800.0)
+2025-06-13 14:24:12,851 - __main__ - DEBUG - MockRM DG: Lots for XAUUSD E:1938.0 SL:1930.0 Risk:10.0 -> 0.01 lots (SL pips: 800.0)
+2025-06-13 14:24:12,851 - __main__ - DEBUG - MockRM DG: Lots for XAUUSD E:1968.0 SL:1976.0 Risk:10.0 -> 0.01 lots (SL pips: 800.0)
+2025-06-13 14:24:12,851 - __main__ - DEBUG - MockRM DG: Lots for XAUUSD E:1932.0 SL:1924.0 Risk:10.0 -> 0.01 lots (SL pips: 800.0)
+2025-06-13 14:24:12,851 - __main__ - INFO - Generated 6 orders for DualGridModel (XAUUSD).
+2025-06-13 14:24:12,851 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'SELL_LIMIT', 'entry_price': 1956.0, 'sl': 1964.0, 'tp': 1936.0, 'lot_size': 0.01, 'grid_id': 'DG_XAUUSD_SLIM_1'}
+2025-06-13 14:24:12,852 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'BUY_LIMIT', 'entry_price': 1944.0, 'sl': 1936.0, 'tp': 1964.0, 'lot_size': 0.01, 'grid_id': 'DG_XAUUSD_BLIM_1'}
+2025-06-13 14:24:12,852 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'SELL_LIMIT', 'entry_price': 1962.0, 'sl': 1970.0, 'tp': 1942.0, 'lot_size': 0.01, 'grid_id': 'DG_XAUUSD_SLIM_2'}
+2025-06-13 14:24:12,852 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'BUY_LIMIT', 'entry_price': 1938.0, 'sl': 1930.0, 'tp': 1958.0, 'lot_size': 0.01, 'grid_id': 'DG_XAUUSD_BLIM_2'}
+2025-06-13 14:24:12,852 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'SELL_LIMIT', 'entry_price': 1968.0, 'sl': 1976.0, 'tp': 1948.0, 'lot_size': 0.01, 'grid_id': 'DG_XAUUSD_SLIM_3'}
+2025-06-13 14:24:12,852 - __main__ - INFO -   {'symbol': 'XAUUSD', 'order_type': 'BUY_LIMIT', 'entry_price': 1932.0, 'sl': 1924.0, 'tp': 1952.0, 'lot_size': 0.01, 'grid_id': 'DG_XAUUSD_BLIM_3'}
+2025-06-13 14:24:12,852 - __main__ - INFO - --- Testing DualGridModel EURUSD (only breakout) ---
+2025-06-13 14:24:12,852 - __main__ - INFO - DualGridModel initialized for EURUSD: Breakout Levels=3 (ATR x0.8), Reversal Levels=0 (ATR x0.75), SL ATR x1.0, TP ATR x1.0
+2025-06-13 14:24:12,852 - __main__ - DEBUG - MockRM DG: Lots for EURUSD E:1.1023 SL:1.1013 Risk:10.0 -> 0.01 lots (SL pips: 100.00000000001118)
+2025-06-13 14:24:12,852 - __main__ - DEBUG - MockRM DG: Lots for EURUSD E:1.1007 SL:1.1017 Risk:10.0 -> 0.01 lots (SL pips: 99.99999999998897)
+2025-06-13 14:24:12,852 - __main__ - DEBUG - MockRM DG: Lots for EURUSD E:1.1031 SL:1.1021 Risk:10.0 -> 0.01 lots (SL pips: 99.99999999998897)
+2025-06-13 14:24:12,852 - __main__ - DEBUG - MockRM DG: Lots for EURUSD E:1.0999 SL:1.1009 Risk:10.0 -> 0.01 lots (SL pips: 99.99999999998897)
+2025-06-13 14:24:12,852 - __main__ - DEBUG - MockRM DG: Lots for EURUSD E:1.1039 SL:1.1029 Risk:10.0 -> 0.01 lots (SL pips: 100.00000000001118)
+2025-06-13 14:24:12,852 - __main__ - DEBUG - MockRM DG: Lots for EURUSD E:1.0991 SL:1.1001 Risk:10.0 -> 0.01 lots (SL pips: 100.00000000001118)
+2025-06-13 14:24:12,852 - __main__ - INFO - Generated 6 orders for DualGridModel (EURUSD).
+2025-06-13 14:24:12,852 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.1023, 'sl': 1.1013, 'tp': 1.1033, 'lot_size': 0.01, 'grid_id': 'DG_EURUSD_BS_1'}
+2025-06-13 14:24:12,852 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_STOP', 'entry_price': 1.1007, 'sl': 1.1017, 'tp': 1.0997, 'lot_size': 0.01, 'grid_id': 'DG_EURUSD_SS_1'}
+2025-06-13 14:24:12,852 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.1031, 'sl': 1.1021, 'tp': 1.1041, 'lot_size': 0.01, 'grid_id': 'DG_EURUSD_BS_2'}
+2025-06-13 14:24:12,852 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_STOP', 'entry_price': 1.0999, 'sl': 1.1009, 'tp': 1.0989, 'lot_size': 0.01, 'grid_id': 'DG_EURUSD_SS_2'}
+2025-06-13 14:24:12,852 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'BUY_STOP', 'entry_price': 1.1039, 'sl': 1.1029, 'tp': 1.1049, 'lot_size': 0.01, 'grid_id': 'DG_EURUSD_BS_3'}
+2025-06-13 14:24:12,852 - __main__ - INFO -   {'symbol': 'EURUSD', 'order_type': 'SELL_STOP', 'entry_price': 1.0991, 'sl': 1.1001, 'tp': 1.0981, 'lot_size': 0.01, 'grid_id': 'DG_EURUSD_SS_3'}
