@@ -297,3 +297,90 @@ ValueError: Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
 2025-06-13 16:06:39,910 - grid_trader.models.volatility_grid - INFO - VolatilityGridModel initialized for EURUSD with 2 levels, ATR multiplier 1.0
 2025-06-13 16:06:39,910 - grid_trader.models.volatility_grid - INFO - Generated 4 orders for VolatilityGridModel (EURUSD).
 2025-06-13 16:06:39,913 - grid_trader.models.base_model - ERROR - Missing critical base_trade_params: symbol, direction, base_price, base_sl, or atr.
+2025-06-13 16:36:58,556 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 2, Cooldown: 0.0001s
+2025-06-13 16:36:58,557 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(583b59 | EURUSD BUY_LIMIT 0.01 lots @ 1.09 SL:1.085 TP:1.1 | Status: PENDING | GridID: None | Regen: 0)
+2025-06-13 16:36:58,557 - grid_trader.engine.order_manager - INFO - Order Cancelled (Simulated): Order(583b59 | EURUSD BUY_LIMIT 0.01 lots @ 1.09 SL:1.085 TP:1.1 | Status: CANCELLED | GridID: None | Regen: 0)
+2025-06-13 16:36:58,557 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 2, Cooldown: 0.0001s
+2025-06-13 16:36:58,557 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(8b093c | EURUSD BUY_STOP 0.01 lots @ 1.1 SL:1.095 TP:1.11 | Status: PENDING | GridID: None | Regen: 0)
+2025-06-13 16:36:58,557 - grid_trader.engine.order_manager - INFO - Order Filled (Simulated): Order(8b093c | EURUSD BUY_STOP 0.01 lots @ 1.1 SL:1.095 TP:1.11 | Status: FILLED | GridID: None | Regen: 0) at 1.1
+2025-06-13 16:36:58,557 - grid_trader.engine.order_manager - WARNING - Cannot cancel order 5ce23a0a-d04d-409d-b15d-8cd7898b093c: Status is FILLED (not PENDING).
+2025-06-13 16:36:58,557 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 2, Cooldown: 0.0001s
+2025-06-13 16:36:58,558 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(35499f | EURUSD BUY_STOP 0.01 lots @ 1.1 SL:1.095 TP:1.11 | Status: PENDING | GridID: None | Regen: 0)
+2025-06-13 16:36:58,558 - grid_trader.engine.order_manager - INFO - Order Filled (Simulated): Order(35499f | EURUSD BUY_STOP 0.01 lots @ 1.1 SL:1.095 TP:1.11 | Status: FILLED | GridID: None | Regen: 0) at 1.1
+2025-06-13 16:36:58,558 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 2, Cooldown: 0.0001s
+2025-06-13 16:36:58,558 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(3459a7 | EURUSD SELL_LIMIT 0.01 lots @ 1.1 SL:1.105 TP:1.09 | Status: PENDING | GridID: None | Regen: 0)
+2025-06-13 16:36:58,558 - grid_trader.engine.order_manager - INFO - Order Filled (Simulated): Order(3459a7 | EURUSD SELL_LIMIT 0.01 lots @ 1.1 SL:1.105 TP:1.09 | Status: FILLED | GridID: None | Regen: 0) at 1.1
+2025-06-13 16:36:58,558 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 2, Cooldown: 0.0001s
+2025-06-13 16:36:58,558 - grid_trader.engine.order_manager - WARNING - Buy order for EURUSD has SL 1.1 not below entry 1.1. Order rejected.
+2025-06-13 16:36:58,558 - grid_trader.engine.order_manager - WARNING - Buy order for EURUSD has TP 1.1 not above entry 1.1. Order rejected.
+2025-06-13 16:36:58,558 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 2, Cooldown: 0.0001s
+2025-06-13 16:36:58,558 - grid_trader.engine.order_manager - ERROR - Invalid order type string: INVALID_TYPE
+2025-06-13 16:36:58,558 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 2, Cooldown: 0.0001s
+2025-06-13 16:36:58,558 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(ae35a6 | EURUSD BUY_STOP 0.01 lots @ 1.1 SL:1.095 TP:1.11 | Status: PENDING | GridID: None | Regen: 0)
+2025-06-13 16:36:58,558 - grid_trader.engine.order_manager - INFO - Order a066b231-2fd8-4b28-bae7-5ec9ecae35a6 SL modified to 1.094
+2025-06-13 16:36:58,558 - grid_trader.engine.order_manager - INFO - Order a066b231-2fd8-4b28-bae7-5ec9ecae35a6 TP modified to 1.111
+2025-06-13 16:36:58,558 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 2, Cooldown: 0.0001s
+2025-06-13 16:36:58,559 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(c37e41 | EURUSD BUY_STOP 0.01 lots @ 1.1 SL:1.095 TP:1.11 | Status: PENDING | GridID: grid1 | Regen: 0)
+2025-06-13 16:36:58,559 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 2, Cooldown: 0.0001s
+2025-06-13 16:36:58,559 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(aea3eb | EURUSD BUY_LIMIT 0.01 lots @ 1.09 SL:1.085 TP:1.1 | Status: PENDING | GridID: RegenTest | Regen: 0)
+2025-06-13 16:36:58,559 - grid_trader.engine.order_manager - INFO - Order Filled (Simulated): Order(aea3eb | EURUSD BUY_LIMIT 0.01 lots @ 1.09 SL:1.085 TP:1.1 | Status: FILLED | GridID: RegenTest | Regen: 0) at 1.09
+2025-06-13 16:36:58,559 - grid_trader.engine.order_manager - INFO - Position Closed (Simulated): Order(aea3eb | EURUSD BUY_LIMIT 0.01 lots @ 1.09 SL:1.085 TP:1.1 | Status: STOPPED_OUT | GridID: RegenTest | Regen: 0) by STOPPED_OUT at 1.085
+2025-06-13 16:36:58,559 - grid_trader.engine.order_manager - INFO - Widening SL/TP for regen of 6918e534-1887-46cd-95f6-82eedfaea3eb. Factor: 1.2. SL: 1.085->1.08, TP: 1.1->1.1
+2025-06-13 16:36:58,559 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(945a43 | EURUSD BUY_LIMIT 0.01 lots @ 1.09 SL:1.08 TP:1.1 | Status: PENDING | GridID: RegenTest | Regen: 1)
+2025-06-13 16:36:58,559 - grid_trader.engine.order_manager - INFO - Order Filled (Simulated): Order(945a43 | EURUSD BUY_LIMIT 0.01 lots @ 1.09 SL:1.08 TP:1.1 | Status: FILLED | GridID: RegenTest | Regen: 1) at 1.09
+2025-06-13 16:36:58,559 - grid_trader.engine.order_manager - INFO - Position Closed (Simulated): Order(945a43 | EURUSD BUY_LIMIT 0.01 lots @ 1.09 SL:1.08 TP:1.1 | Status: STOPPED_OUT | GridID: RegenTest | Regen: 1) by STOPPED_OUT at 1.08
+2025-06-13 16:36:58,559 - grid_trader.engine.order_manager - INFO - Widening SL/TP for regen of 6918e534-1887-46cd-95f6-82eedfaea3eb. Factor: 1.5. SL: 1.08->1.08, TP: 1.1->1.1
+2025-06-13 16:36:58,559 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(d9adf0 | EURUSD BUY_LIMIT 0.01 lots @ 1.09 SL:1.08 TP:1.1 | Status: PENDING | GridID: RegenTest | Regen: 2)
+2025-06-13 16:36:58,559 - grid_trader.engine.order_manager - INFO - Order Filled (Simulated): Order(d9adf0 | EURUSD BUY_LIMIT 0.01 lots @ 1.09 SL:1.08 TP:1.1 | Status: FILLED | GridID: RegenTest | Regen: 2) at 1.09
+2025-06-13 16:36:58,559 - grid_trader.engine.order_manager - INFO - Position Closed (Simulated): Order(d9adf0 | EURUSD BUY_LIMIT 0.01 lots @ 1.09 SL:1.08 TP:1.1 | Status: STOPPED_OUT | GridID: RegenTest | Regen: 2) by STOPPED_OUT at 1.08
+2025-06-13 16:36:58,560 - grid_trader.engine.order_manager - INFO - Order slot 6918e534-1887-46cd-95f6-82eedfaea3eb (last attempt ad82d3bb-e671-48aa-89e0-cd1243d9adf0) reached max regen attempts (2).
+2025-06-13 16:36:58,560 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 2, Cooldown: 0.0001s
+2025-06-13 16:36:58,560 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(dfd8b4 | EURUSD BUY_STOP 0.01 lots @ 1.1 SL:1.095 TP:1.11 | Status: PENDING | GridID: None | Regen: 0)
+2025-06-13 16:36:58,560 - grid_trader.engine.order_manager - INFO - Order Filled (Simulated): Order(dfd8b4 | EURUSD BUY_STOP 0.01 lots @ 1.1 SL:1.095 TP:1.11 | Status: FILLED | GridID: None | Regen: 0) at 1.1
+2025-06-13 16:36:58,560 - grid_trader.engine.order_manager - INFO - Position Closed (Simulated): Order(dfd8b4 | EURUSD BUY_STOP 0.01 lots @ 1.1 SL:1.095 TP:1.11 | Status: STOPPED_OUT | GridID: None | Regen: 0) by STOPPED_OUT at 1.095
+2025-06-13 16:36:58,560 - grid_trader.engine.order_manager - INFO - OrderManager initialized. Max Regen Attempts: 2, Cooldown: 0.0001s
+2025-06-13 16:36:58,560 - grid_trader.engine.order_manager - INFO - Order Placed (Simulated): Order(0fba2b | EURUSD SELL_STOP 0.01 lots @ 1.1 SL:1.105 TP:1.09 | Status: PENDING | GridID: None | Regen: 0)
+2025-06-13 16:36:58,560 - grid_trader.engine.order_manager - INFO - Order Filled (Simulated): Order(0fba2b | EURUSD SELL_STOP 0.01 lots @ 1.1 SL:1.105 TP:1.09 | Status: FILLED | GridID: None | Regen: 0) at 1.1
+2025-06-13 16:36:58,560 - grid_trader.engine.order_manager - INFO - Position Closed (Simulated): Order(0fba2b | EURUSD SELL_STOP 0.01 lots @ 1.1 SL:1.105 TP:1.09 | Status: TP_HIT | GridID: None | Regen: 0) by TP_HIT at 1.09
+2025-06-13 16:41:28,856 - grid_trader.engine.risk_manager - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 16:41:28,857 - grid_trader.engine.risk_manager - INFO - Account balance updated to: 12000
+2025-06-13 16:41:28,857 - grid_trader.engine.risk_manager - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 16:41:28,857 - grid_trader.engine.risk_manager - INFO - LotCalc (EURUSD): Entry=1.1, SL=1.095 (50.00 pips). Risk=$10.00. RawLots=0.0200. FinalLots=0.02. Est.Margin=$22.00
+2025-06-13 16:41:28,858 - grid_trader.engine.risk_manager - WARNING - LotCalc (EURUSD): Raw lot size 0.002 too small for min_lot 0.01 with risk $1 and SL 50.00 pips. Returning 0 lots.
+2025-06-13 16:41:28,858 - grid_trader.engine.risk_manager - INFO - LotCalc (EURUSD): Entry=1.1, SL=1.0999 (1.00 pips). Risk=$10.00. RawLots=1.0000. FinalLots=1.00. Est.Margin=$1100.00
+2025-06-13 16:41:28,858 - grid_trader.engine.risk_manager - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 16:41:28,858 - grid_trader.engine.risk_manager - WARNING - LotCalc (NODECIMALS): Margin calc for cross-currency pair NODECIMALS may be inaccurate (needs live rates). Using rough estimate.
+2025-06-13 16:41:28,858 - grid_trader.engine.risk_manager - INFO - LotCalc (NODECIMALS): Entry=3000, SL=2990 (10.00 pips). Risk=$10.00. RawLots=1.0000. FinalLots=1.00. Est.Margin=$0.01
+2025-06-13 16:41:28,858 - grid_trader.engine.risk_manager - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 16:41:28,858 - grid_trader.engine.risk_manager - INFO - LotCalc (USDJPY): Entry=130.0, SL=130.5 (50.00 pips). Risk=$10.00. RawLots=0.0235. FinalLots=0.02. Est.Margin=$20.00
+2025-06-13 16:41:28,859 - grid_trader.engine.risk_manager - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 16:41:28,859 - grid_trader.engine.risk_manager - INFO - LotCalc (XAUUSD): Entry=1950.0, SL=1940.0 (1000.00 pips). Risk=$10.00. RawLots=0.0100. FinalLots=0.01. Est.Margin=$0.01
+2025-06-13 16:41:28,859 - grid_trader.engine.risk_manager - INFO - LotCalc (XAUUSD): Entry=1950.0, SL=1949.5 (50.00 pips). Risk=$10.00. RawLots=0.2000. FinalLots=0.20. Est.Margin=$0.20
+2025-06-13 16:41:28,859 - grid_trader.engine.risk_manager - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 16:41:28,859 - grid_trader.engine.risk_manager - WARNING - CanOpenTrade (EURUSD): Required margin for 8.0 lots would use >80% of total balance. Blocking.
+2025-06-13 16:41:28,859 - grid_trader.engine.risk_manager - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 16:41:28,860 - grid_trader.engine.risk_manager - ERROR - Symbol NONEXISTENT not found in SYMBOL_SETTINGS in config.py.
+2025-06-13 16:41:28,860 - grid_trader.engine.risk_manager - ERROR - Missing required key 'decimals' in SYMBOL_SETTINGS for EURUSD.
+2025-06-13 16:41:28,861 - grid_trader.engine.risk_manager - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 16:41:28,861 - grid_trader.engine.risk_manager - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 16:41:28,861 - grid_trader.engine.risk_manager - WARNING - LotCalc (EURUSD): Entry price and SL price are identical (1.1). Cannot calculate lot size.
+2025-06-13 16:41:28,861 - grid_trader.engine.risk_manager - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 16:41:28,861 - grid_trader.engine.risk_manager - WARNING - LotCalc (EURUSD): Risk amount USD (0) must be positive.
+2025-06-13 16:41:28,861 - grid_trader.engine.risk_manager - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 16:41:28,861 - grid_trader.engine.risk_manager - WARNING - LotCalc (EURUSD): Required margin ($11000.00) for 10.0 lots exceeds total balance ($10000.00).
+2025-06-13 16:41:28,861 - grid_trader.engine.risk_manager - INFO - RiskManager initialized: Balance=10000.0, Leverage=1:100.0, MaxAccRisk=2.0%, DefaultRisk/Trade=$10.0
+2025-06-13 16:41:28,862 - grid_trader.engine.risk_manager - ERROR - Invalid leverage string: 100. Defaulting to 1:100. Error: Leverage string must be in '1:N' format.
+Traceback (most recent call last):
+  File "/app/grid_trader/engine/risk_manager.py", line 49, in _parse_leverage
+    raise ValueError("Leverage string must be in '1:N' format.")
+ValueError: Leverage string must be in '1:N' format.
+2025-06-13 16:41:28,863 - grid_trader.engine.risk_manager - ERROR - Invalid leverage string: 1:0. Defaulting to 1:100. Error: Leverage ratio must be positive.
+Traceback (most recent call last):
+  File "/app/grid_trader/engine/risk_manager.py", line 55, in _parse_leverage
+    raise ValueError("Leverage ratio must be positive.")
+ValueError: Leverage ratio must be positive.
+2025-06-13 16:41:28,863 - grid_trader.engine.risk_manager - ERROR - Invalid leverage string: 2:100. Defaulting to 1:100. Error: Leverage string must start with '1:'.
+Traceback (most recent call last):
+  File "/app/grid_trader/engine/risk_manager.py", line 52, in _parse_leverage
+    raise ValueError("Leverage string must start with '1:'.")
+ValueError: Leverage string must start with '1:'.
